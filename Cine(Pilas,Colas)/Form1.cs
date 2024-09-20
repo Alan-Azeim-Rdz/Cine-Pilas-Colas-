@@ -359,5 +359,10 @@ namespace Cine_Pilas_Colas_
                 ticketQueue.ComprarBoleto(ticket);
             }
         }
+
+        private void BtnPopCorn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

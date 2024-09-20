@@ -56,10 +56,24 @@
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            LblPopCorn = new Label();
+            LblSoda = new Label();
+            LblHotDoog = new Label();
+            LblNachos = new Label();
+            BtnPopCorn = new Button();
             TabContrleCinema.SuspendLayout();
             TabPageTicket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            TabPageCandy.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // TabContrleCinema
@@ -105,7 +119,7 @@
             // 
             BtnMostrarColas.BackgroundImage = (Image)resources.GetObject("BtnMostrarColas.BackgroundImage");
             BtnMostrarColas.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnMostrarColas.Location = new Point(696, 426);
+            BtnMostrarColas.Location = new Point(696, 421);
             BtnMostrarColas.Name = "BtnMostrarColas";
             BtnMostrarColas.Size = new Size(117, 70);
             BtnMostrarColas.TabIndex = 34;
@@ -308,6 +322,15 @@
             // 
             // TabPageCandy
             // 
+            TabPageCandy.Controls.Add(BtnPopCorn);
+            TabPageCandy.Controls.Add(LblNachos);
+            TabPageCandy.Controls.Add(LblHotDoog);
+            TabPageCandy.Controls.Add(LblSoda);
+            TabPageCandy.Controls.Add(LblPopCorn);
+            TabPageCandy.Controls.Add(pictureBox6);
+            TabPageCandy.Controls.Add(pictureBox5);
+            TabPageCandy.Controls.Add(pictureBox4);
+            TabPageCandy.Controls.Add(pictureBox3);
             TabPageCandy.Location = new Point(4, 24);
             TabPageCandy.Name = "TabPageCandy";
             TabPageCandy.Padding = new Padding(3);
@@ -342,6 +365,92 @@
             Column5.HeaderText = "Column5";
             Column5.Name = "Column5";
             // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(36, 22);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(112, 111);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(36, 289);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(112, 111);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 1;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(36, 156);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(112, 111);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 2;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(36, 426);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(112, 111);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 3;
+            pictureBox6.TabStop = false;
+            // 
+            // LblPopCorn
+            // 
+            LblPopCorn.AutoSize = true;
+            LblPopCorn.Location = new Point(61, 136);
+            LblPopCorn.Name = "LblPopCorn";
+            LblPopCorn.Size = new Size(59, 15);
+            LblPopCorn.TabIndex = 4;
+            LblPopCorn.Text = "Palomitas";
+            // 
+            // LblSoda
+            // 
+            LblSoda.AutoSize = true;
+            LblSoda.Location = new Point(68, 270);
+            LblSoda.Name = "LblSoda";
+            LblSoda.Size = new Size(52, 15);
+            LblSoda.TabIndex = 5;
+            LblSoda.Text = "Refresco";
+            // 
+            // LblHotDoog
+            // 
+            LblHotDoog.AutoSize = true;
+            LblHotDoog.Location = new Point(64, 403);
+            LblHotDoog.Name = "LblHotDoog";
+            LblHotDoog.Size = new Size(56, 15);
+            LblHotDoog.TabIndex = 6;
+            LblHotDoog.Text = "HotDoog";
+            // 
+            // LblNachos
+            // 
+            LblNachos.AutoSize = true;
+            LblNachos.Location = new Point(68, 540);
+            LblNachos.Name = "LblNachos";
+            LblNachos.Size = new Size(47, 15);
+            LblNachos.TabIndex = 7;
+            LblNachos.Text = "Nachos";
+            // 
+            // BtnPopCorn
+            // 
+            BtnPopCorn.Location = new Point(636, 81);
+            BtnPopCorn.Name = "BtnPopCorn";
+            BtnPopCorn.Size = new Size(75, 23);
+            BtnPopCorn.TabIndex = 8;
+            BtnPopCorn.Text = "button1";
+            BtnPopCorn.UseVisualStyleBackColor = true;
+            BtnPopCorn.Click += BtnPopCorn_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -354,6 +463,12 @@
             TabPageTicket.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            TabPageCandy.ResumeLayout(false);
+            TabPageCandy.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
         }
 
@@ -386,5 +501,14 @@
         private Button BtnA1;
         private Label LblPantalla;
         private Button BtnMostrarColas;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
+        private Label LblNachos;
+        private Label LblHotDoog;
+        private Label LblSoda;
+        private Label LblPopCorn;
+        private Button BtnPopCorn;
     }
 }
