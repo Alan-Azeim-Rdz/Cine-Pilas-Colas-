@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace Cine_Pilas_Colas_
 {
     public partial class Form1 : Form
@@ -7,6 +9,7 @@ namespace Cine_Pilas_Colas_
 
         public Form1()
         {
+
             InitializeComponent();
         }
         QueueTicket ticketQueue = new QueueTicket();
@@ -356,10 +359,38 @@ namespace Cine_Pilas_Colas_
 
         private void BtnPopCorn_Click(object sender, EventArgs e)
         {
-            
-            
 
-            
+
+
+
+        }
+
+        private void BtnMostrarColas_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MessageBox.Show($"Ticket en espera: {ticketQueue.Peek()}"); // Ajusta según tus propiedades
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message); // Muestra un mensaje si la cola está vacía
+            }
+        }
+
+        private void BtnVIP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCasual_Click(object sender, EventArgs e)
+        {
+            Lblshift.Text = ticketQueue.Dequeue();
+            TabContrleCinema.SelectedIndex = 2;
+        }
+
+        private void BtnOkey_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

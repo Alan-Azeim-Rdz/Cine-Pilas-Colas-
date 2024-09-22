@@ -39,9 +39,57 @@ namespace Cine_Pilas_Colas_
             }
         }
 
-        public void Q
+        public string Dequeue()
+        {
+            string Ticket = ""; 
+            if (front == null) // Si la cola está vacía
+            {
+                MessageBox.Show("La cola está vacía.");
+                Ticket = "";
+                return Ticket;
+            }
+
+            Ticket_Cine ticket = front.Ticket; // Guardar el ticket del nodo en el frente
+            front = front.Next;                // Mover el frente al siguiente nodo
+
+            if (front == null) // Si la cola ahora está vacía, rear también debe ser null
+            {
+                rear = null;
+            }
+            
+            Ticket = ticket.ToString();
+
+            return Ticket;
+        }
 
 
+        public string Peek() 
+        {
+            if(front == null)
+            {
+                throw new InvalidOperationException("La cola esta vacia, nadie esta en espera");
+            }
+
+             string Ticket = "\n" + front.Ticket.ToString();
+            return Ticket;
+        }
+
+        public bool IsEmpty() => front == null;
+
+        public int Size()
+        {
+            int count = 0;
+            Node current = front;
+
+            // Recorre la cola desde el frente hasta el final
+            while (current != null)
+            {
+                count++;
+                current = current.Next; // Avanza al siguiente nodo
+            }
+
+            return count; // Devuelve el número total de elementos
+        }
 
     }
 }
