@@ -35,12 +35,12 @@ namespace Cine_Pilas_Colas_
             {
                 // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
                 // Si no es premium, agregar a la cola regular
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
@@ -59,20 +59,14 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
-        private void BtnMostrarColas_Click(object sender, EventArgs e)
-        {
-            // Mostrar los datos de las colas
-            string datos = ticketQueue.ObtenerDatosColas();
-            MessageBox.Show(datos, "Datos de las Colas");
-        }
 
         private void BtnA3_Click(object sender, EventArgs e)
         {
@@ -88,11 +82,11 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
@@ -110,11 +104,11 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
@@ -132,11 +126,11 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
@@ -154,11 +148,11 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
@@ -176,11 +170,11 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
@@ -198,11 +192,11 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
@@ -220,11 +214,11 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
@@ -242,11 +236,11 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
@@ -264,11 +258,11 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
@@ -286,11 +280,11 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
@@ -308,11 +302,11 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
@@ -330,11 +324,11 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
@@ -352,17 +346,20 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
             else
             {
-                ticketQueue.ComprarBoleto(ticket);
+                ticketQueue.Enqueue(ticket);
             }
         }
 
         private void BtnPopCorn_Click(object sender, EventArgs e)
         {
+            
+            
 
+            
         }
     }
 }
