@@ -13,6 +13,7 @@ namespace Cine_Pilas_Colas_
             InitializeComponent();
         }
         QueueTicket ticketQueue = new QueueTicket();
+        PriorityTicketQueue TicketPriority = new PriorityTicketQueue();
 
         // Método que pregunta si el cliente tiene membresía premium
         public bool Question()
@@ -38,7 +39,7 @@ namespace Cine_Pilas_Colas_
             {
                 // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -62,7 +63,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -85,7 +86,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -107,7 +108,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -129,7 +130,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -151,7 +152,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -173,7 +174,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -195,7 +196,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -217,7 +218,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -239,7 +240,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -261,7 +262,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -283,7 +284,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -305,7 +306,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -327,7 +328,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -349,7 +350,7 @@ namespace Cine_Pilas_Colas_
             if (Question())
             {
                 ticket.IsPremium = "si";
-                ticketQueue.Enqueue(ticket);
+                TicketPriority.Enqueue(ticket);
             }
             else
             {
@@ -384,13 +385,34 @@ namespace Cine_Pilas_Colas_
 
         private void BtnCasual_Click(object sender, EventArgs e)
         {
-            Lblshift.Text = ticketQueue.Dequeue();
-            TabContrleCinema.SelectedIndex = 2;
+            if (ticketQueue.IsEmpty() == true)
+            {
+                MessageBox.Show("No hay nadie en la cola para la dulceria");
+            }
+            else
+            {
+                MessageBox.Show("Turno del tiket " + ticketQueue.Peek());
+                Lblshift.Text = ticketQueue.Dequeue();
+                TabContrleCinema.SelectedIndex = 2;
+            }
+
+
         }
 
         private void BtnOkey_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnShow_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("En la cola Prioridad hay " + TicketPriority.Size().ToString() + " en fila");
+            MessageBox.Show("En la cola hay " + ticketQueue.Size().ToString() + " en la fila");
+        }
+
+        private void BtnNext_Click(object sender, EventArgs e)
+        {
+            Lblshift.Text = ticketQueue.Dequeue();
         }
     }
 }

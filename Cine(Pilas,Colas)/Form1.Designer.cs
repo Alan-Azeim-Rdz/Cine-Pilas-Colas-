@@ -54,6 +54,7 @@
             BtnCasual = new Button();
             BtnVIP = new Button();
             TabPageCandyShop = new TabPage();
+            BtnNext = new Button();
             Lblshift = new Label();
             label7 = new Label();
             label5 = new Label();
@@ -82,6 +83,8 @@
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
+            TabPageAdmin = new TabPage();
+            BtnShow = new Button();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
@@ -97,6 +100,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            TabPageAdmin.SuspendLayout();
             SuspendLayout();
             // 
             // TabContrleCinema
@@ -104,6 +108,7 @@
             TabContrleCinema.Controls.Add(TabPageTicket);
             TabContrleCinema.Controls.Add(TabPageSelectionRow);
             TabContrleCinema.Controls.Add(TabPageCandyShop);
+            TabContrleCinema.Controls.Add(TabPageAdmin);
             TabContrleCinema.Location = new Point(12, 12);
             TabContrleCinema.Name = "TabContrleCinema";
             TabContrleCinema.SelectedIndex = 0;
@@ -387,6 +392,7 @@
             // TabPageCandyShop
             // 
             TabPageCandyShop.AutoScroll = true;
+            TabPageCandyShop.Controls.Add(BtnNext);
             TabPageCandyShop.Controls.Add(Lblshift);
             TabPageCandyShop.Controls.Add(label7);
             TabPageCandyShop.Controls.Add(label5);
@@ -423,6 +429,16 @@
             TabPageCandyShop.TabIndex = 2;
             TabPageCandyShop.Text = "Dulceria";
             TabPageCandyShop.UseVisualStyleBackColor = true;
+            // 
+            // BtnNext
+            // 
+            BtnNext.Location = new Point(512, 542);
+            BtnNext.Name = "BtnNext";
+            BtnNext.Size = new Size(75, 23);
+            BtnNext.TabIndex = 67;
+            BtnNext.Text = "Siguiente";
+            BtnNext.UseVisualStyleBackColor = true;
+            BtnNext.Click += BtnNext_Click;
             // 
             // Lblshift
             // 
@@ -680,6 +696,27 @@
             pictureBox3.TabIndex = 39;
             pictureBox3.TabStop = false;
             // 
+            // TabPageAdmin
+            // 
+            TabPageAdmin.Controls.Add(BtnShow);
+            TabPageAdmin.Location = new Point(4, 24);
+            TabPageAdmin.Name = "TabPageAdmin";
+            TabPageAdmin.Padding = new Padding(3);
+            TabPageAdmin.Size = new Size(846, 589);
+            TabPageAdmin.TabIndex = 3;
+            TabPageAdmin.Text = "Administracion";
+            TabPageAdmin.UseVisualStyleBackColor = true;
+            // 
+            // BtnShow
+            // 
+            BtnShow.Location = new Point(87, 95);
+            BtnShow.Name = "BtnShow";
+            BtnShow.Size = new Size(121, 46);
+            BtnShow.TabIndex = 0;
+            BtnShow.Text = "Mostrar el orden de los boletos";
+            BtnShow.UseVisualStyleBackColor = true;
+            BtnShow.Click += BtnShow_Click;
+            // 
             // Column1
             // 
             Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
@@ -734,6 +771,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            TabPageAdmin.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -798,5 +836,8 @@
         private Button BtnVIP;
         private Label Lblshift;
         private Label label7;
+        private Button BtnNext;
+        private TabPage TabPageAdmin;
+        private Button BtnShow;
     }
 }

@@ -13,8 +13,8 @@ namespace Cine_Pilas_Colas_
         //linked-list de Tickets 
 
 
-        private Node front; // Primer elemento (frente de la cola)
-        private Node rear;  // Último elemento (final de la cola)
+        public Node front; // Primer elemento (frente de la cola)
+        public Node rear;  // Último elemento (final de la cola)
 
         public QueueTicket()
         {
@@ -65,12 +65,15 @@ namespace Cine_Pilas_Colas_
 
         public string Peek() 
         {
-            if(front == null)
+            string Ticket = "";
+            if (front == null)
             {
-                throw new InvalidOperationException("La cola esta vacia, nadie esta en espera");
+                MessageBox.Show("La cola esta vacia, nadie esta en espera");
             }
-
-             string Ticket = "\n" + front.Ticket.ToString();
+            else
+            {
+                Ticket = "\n" + front.Ticket.ToString();
+            }
             return Ticket;
         }
 
