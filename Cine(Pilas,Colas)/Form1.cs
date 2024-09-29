@@ -1,3 +1,4 @@
+using System.Diagnostics.Eventing.Reader;
 using System.Windows.Forms;
 
 namespace Cine_Pilas_Colas_
@@ -361,47 +362,27 @@ namespace Cine_Pilas_Colas_
         private void BtnPopCorn_Click(object sender, EventArgs e)
         {
 
-
-
-
         }
 
         private void BtnMostrarColas_Click(object sender, EventArgs e)
         {
-            try
+            if (TicketQueueP.IsEmpty() == true)
             {
-                MessageBox.Show($"Ticket en espera: {TicketQueue.Peek()}"); // Ajusta según tus propiedades
+                Lblshift.Text = TicketQueue.Dequeue();
+
             }
-            catch (InvalidOperationException ex)
-            {
-                MessageBox.Show(ex.Message); // Muestra un mensaje si la cola está vacía
-            }
-        }
-
-        private void BtnVIP_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnCasual_Click(object sender, EventArgs e)
-        {
             if (TicketQueue.IsEmpty() == true)
             {
-                MessageBox.Show("No hay nadie en la cola para la dulceria");
+                Lblshift.Text = TicketQueueP.Dequeue();
             }
             else
             {
-                MessageBox.Show("Turno del tiket " + TicketQueue.Peek());
-                Lblshift.Text = TicketQueue.Dequeue();
-                TabContrleCinema.SelectedIndex = 2;
+                MessageBox.Show("no hay nada aqui mano");
             }
-
-
         }
 
         private void BtnOkey_Click(object sender, EventArgs e)
         {
-
         }
 
         private void BtnShow_Click(object sender, EventArgs e)

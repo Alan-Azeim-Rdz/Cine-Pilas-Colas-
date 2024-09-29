@@ -50,9 +50,6 @@
             BtnA1 = new Button();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            TabPageSelectionRow = new TabPage();
-            BtnCasual = new Button();
-            BtnVIP = new Button();
             TabPageCandyShop = new TabPage();
             BtnNext = new Button();
             Lblshift = new Label();
@@ -94,7 +91,6 @@
             TabPageTicket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            TabPageSelectionRow.SuspendLayout();
             TabPageCandyShop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -106,13 +102,13 @@
             // TabContrleCinema
             // 
             TabContrleCinema.Controls.Add(TabPageTicket);
-            TabContrleCinema.Controls.Add(TabPageSelectionRow);
             TabContrleCinema.Controls.Add(TabPageCandyShop);
             TabContrleCinema.Controls.Add(TabPageAdmin);
-            TabContrleCinema.Location = new Point(12, 12);
+            TabContrleCinema.Location = new Point(14, 16);
+            TabContrleCinema.Margin = new Padding(3, 4, 3, 4);
             TabContrleCinema.Name = "TabContrleCinema";
             TabContrleCinema.SelectedIndex = 0;
-            TabContrleCinema.Size = new Size(854, 617);
+            TabContrleCinema.Size = new Size(976, 823);
             TabContrleCinema.TabIndex = 0;
             // 
             // TabPageTicket
@@ -136,10 +132,11 @@
             TabPageTicket.Controls.Add(BtnA1);
             TabPageTicket.Controls.Add(pictureBox2);
             TabPageTicket.Controls.Add(pictureBox1);
-            TabPageTicket.Location = new Point(4, 24);
+            TabPageTicket.Location = new Point(4, 29);
+            TabPageTicket.Margin = new Padding(3, 4, 3, 4);
             TabPageTicket.Name = "TabPageTicket";
-            TabPageTicket.Padding = new Padding(3);
-            TabPageTicket.Size = new Size(846, 589);
+            TabPageTicket.Padding = new Padding(3, 4, 3, 4);
+            TabPageTicket.Size = new Size(968, 790);
             TabPageTicket.TabIndex = 0;
             TabPageTicket.Text = "Acientos Boletos";
             TabPageTicket.UseVisualStyleBackColor = true;
@@ -148,18 +145,19 @@
             // 
             BtnMostrarColas.BackgroundImage = (Image)resources.GetObject("BtnMostrarColas.BackgroundImage");
             BtnMostrarColas.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnMostrarColas.Location = new Point(723, 533);
+            BtnMostrarColas.Location = new Point(826, 711);
+            BtnMostrarColas.Margin = new Padding(3, 4, 3, 4);
             BtnMostrarColas.Name = "BtnMostrarColas";
-            BtnMostrarColas.Size = new Size(117, 50);
+            BtnMostrarColas.Size = new Size(134, 67);
             BtnMostrarColas.TabIndex = 34;
             BtnMostrarColas.UseVisualStyleBackColor = true;
             BtnMostrarColas.Click += BtnMostrarColas_Click;
             // 
             // LblPantalla
             // 
-            LblPantalla.Location = new Point(331, 476);
+            LblPantalla.Location = new Point(378, 635);
             LblPantalla.Name = "LblPantalla";
-            LblPantalla.Size = new Size(202, 39);
+            LblPantalla.Size = new Size(231, 52);
             LblPantalla.TabIndex = 1;
             LblPantalla.Text = "Pantalla";
             LblPantalla.TextAlign = ContentAlignment.MiddleCenter;
@@ -168,9 +166,10 @@
             // 
             BtnC5.BackgroundImage = (Image)resources.GetObject("BtnC5.BackgroundImage");
             BtnC5.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnC5.Location = new Point(696, 310);
+            BtnC5.Location = new Point(795, 413);
+            BtnC5.Margin = new Padding(3, 4, 3, 4);
             BtnC5.Name = "BtnC5";
-            BtnC5.Size = new Size(117, 70);
+            BtnC5.Size = new Size(134, 93);
             BtnC5.TabIndex = 33;
             BtnC5.UseVisualStyleBackColor = true;
             BtnC5.Click += BtnC5_Click;
@@ -179,9 +178,10 @@
             // 
             BtnC4.BackgroundImage = (Image)resources.GetObject("BtnC4.BackgroundImage");
             BtnC4.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnC4.Location = new Point(533, 310);
+            BtnC4.Location = new Point(609, 413);
+            BtnC4.Margin = new Padding(3, 4, 3, 4);
             BtnC4.Name = "BtnC4";
-            BtnC4.Size = new Size(117, 70);
+            BtnC4.Size = new Size(134, 93);
             BtnC4.TabIndex = 32;
             BtnC4.UseVisualStyleBackColor = true;
             BtnC4.Click += BtnC4_Click;
@@ -190,9 +190,10 @@
             // 
             BtnC3.BackgroundImage = (Image)resources.GetObject("BtnC3.BackgroundImage");
             BtnC3.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnC3.Location = new Point(368, 310);
+            BtnC3.Location = new Point(421, 413);
+            BtnC3.Margin = new Padding(3, 4, 3, 4);
             BtnC3.Name = "BtnC3";
-            BtnC3.Size = new Size(117, 70);
+            BtnC3.Size = new Size(134, 93);
             BtnC3.TabIndex = 31;
             BtnC3.UseVisualStyleBackColor = true;
             BtnC3.Click += BtnC3_Click;
@@ -201,9 +202,10 @@
             // 
             BtnC2.BackgroundImage = (Image)resources.GetObject("BtnC2.BackgroundImage");
             BtnC2.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnC2.Location = new Point(203, 310);
+            BtnC2.Location = new Point(232, 413);
+            BtnC2.Margin = new Padding(3, 4, 3, 4);
             BtnC2.Name = "BtnC2";
-            BtnC2.Size = new Size(117, 70);
+            BtnC2.Size = new Size(134, 93);
             BtnC2.TabIndex = 30;
             BtnC2.UseVisualStyleBackColor = true;
             BtnC2.Click += BtnC2_Click;
@@ -212,9 +214,10 @@
             // 
             BtnC1.BackgroundImage = (Image)resources.GetObject("BtnC1.BackgroundImage");
             BtnC1.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnC1.Location = new Point(37, 310);
+            BtnC1.Location = new Point(42, 413);
+            BtnC1.Margin = new Padding(3, 4, 3, 4);
             BtnC1.Name = "BtnC1";
-            BtnC1.Size = new Size(117, 70);
+            BtnC1.Size = new Size(134, 93);
             BtnC1.TabIndex = 29;
             BtnC1.UseVisualStyleBackColor = true;
             BtnC1.Click += BtnC1_Click;
@@ -223,9 +226,10 @@
             // 
             BtnB5.BackgroundImage = (Image)resources.GetObject("BtnB5.BackgroundImage");
             BtnB5.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnB5.Location = new Point(696, 168);
+            BtnB5.Location = new Point(795, 224);
+            BtnB5.Margin = new Padding(3, 4, 3, 4);
             BtnB5.Name = "BtnB5";
-            BtnB5.Size = new Size(117, 70);
+            BtnB5.Size = new Size(134, 93);
             BtnB5.TabIndex = 28;
             BtnB5.UseVisualStyleBackColor = true;
             BtnB5.Click += BtnB5_Click;
@@ -234,9 +238,10 @@
             // 
             BtnB4.BackgroundImage = (Image)resources.GetObject("BtnB4.BackgroundImage");
             BtnB4.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnB4.Location = new Point(533, 168);
+            BtnB4.Location = new Point(609, 224);
+            BtnB4.Margin = new Padding(3, 4, 3, 4);
             BtnB4.Name = "BtnB4";
-            BtnB4.Size = new Size(117, 70);
+            BtnB4.Size = new Size(134, 93);
             BtnB4.TabIndex = 27;
             BtnB4.UseVisualStyleBackColor = true;
             BtnB4.Click += BtnB4_Click;
@@ -245,9 +250,10 @@
             // 
             BtnB3.BackgroundImage = (Image)resources.GetObject("BtnB3.BackgroundImage");
             BtnB3.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnB3.Location = new Point(368, 168);
+            BtnB3.Location = new Point(421, 224);
+            BtnB3.Margin = new Padding(3, 4, 3, 4);
             BtnB3.Name = "BtnB3";
-            BtnB3.Size = new Size(117, 70);
+            BtnB3.Size = new Size(134, 93);
             BtnB3.TabIndex = 26;
             BtnB3.UseVisualStyleBackColor = true;
             BtnB3.Click += BtnB3_Click;
@@ -256,9 +262,10 @@
             // 
             BtnB2.BackgroundImage = (Image)resources.GetObject("BtnB2.BackgroundImage");
             BtnB2.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnB2.Location = new Point(203, 168);
+            BtnB2.Location = new Point(232, 224);
+            BtnB2.Margin = new Padding(3, 4, 3, 4);
             BtnB2.Name = "BtnB2";
-            BtnB2.Size = new Size(117, 70);
+            BtnB2.Size = new Size(134, 93);
             BtnB2.TabIndex = 25;
             BtnB2.UseVisualStyleBackColor = true;
             BtnB2.Click += BtnB2_Click;
@@ -267,9 +274,10 @@
             // 
             BtnB1.BackgroundImage = (Image)resources.GetObject("BtnB1.BackgroundImage");
             BtnB1.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnB1.Location = new Point(37, 168);
+            BtnB1.Location = new Point(42, 224);
+            BtnB1.Margin = new Padding(3, 4, 3, 4);
             BtnB1.Name = "BtnB1";
-            BtnB1.Size = new Size(117, 70);
+            BtnB1.Size = new Size(134, 93);
             BtnB1.TabIndex = 24;
             BtnB1.UseVisualStyleBackColor = true;
             BtnB1.Click += BtnB1_Click;
@@ -278,9 +286,10 @@
             // 
             BtnA5.BackgroundImage = (Image)resources.GetObject("BtnA5.BackgroundImage");
             BtnA5.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnA5.Location = new Point(696, 32);
+            BtnA5.Location = new Point(795, 43);
+            BtnA5.Margin = new Padding(3, 4, 3, 4);
             BtnA5.Name = "BtnA5";
-            BtnA5.Size = new Size(117, 70);
+            BtnA5.Size = new Size(134, 93);
             BtnA5.TabIndex = 23;
             BtnA5.UseVisualStyleBackColor = true;
             BtnA5.Click += BtnA5_Click;
@@ -289,9 +298,10 @@
             // 
             BtnA4.BackgroundImage = (Image)resources.GetObject("BtnA4.BackgroundImage");
             BtnA4.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnA4.Location = new Point(533, 32);
+            BtnA4.Location = new Point(609, 43);
+            BtnA4.Margin = new Padding(3, 4, 3, 4);
             BtnA4.Name = "BtnA4";
-            BtnA4.Size = new Size(117, 70);
+            BtnA4.Size = new Size(134, 93);
             BtnA4.TabIndex = 22;
             BtnA4.UseVisualStyleBackColor = true;
             BtnA4.Click += BtnA4_Click;
@@ -300,9 +310,10 @@
             // 
             BtnA3.BackgroundImage = (Image)resources.GetObject("BtnA3.BackgroundImage");
             BtnA3.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnA3.Location = new Point(368, 32);
+            BtnA3.Location = new Point(421, 43);
+            BtnA3.Margin = new Padding(3, 4, 3, 4);
             BtnA3.Name = "BtnA3";
-            BtnA3.Size = new Size(117, 70);
+            BtnA3.Size = new Size(134, 93);
             BtnA3.TabIndex = 21;
             BtnA3.UseVisualStyleBackColor = true;
             BtnA3.Click += BtnA3_Click;
@@ -311,9 +322,10 @@
             // 
             BtnA2.BackgroundImage = (Image)resources.GetObject("BtnA2.BackgroundImage");
             BtnA2.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnA2.Location = new Point(203, 32);
+            BtnA2.Location = new Point(232, 43);
+            BtnA2.Margin = new Padding(3, 4, 3, 4);
             BtnA2.Name = "BtnA2";
-            BtnA2.Size = new Size(117, 70);
+            BtnA2.Size = new Size(134, 93);
             BtnA2.TabIndex = 20;
             BtnA2.UseVisualStyleBackColor = true;
             BtnA2.Click += BtnA2_Click_1;
@@ -322,9 +334,10 @@
             // 
             BtnA1.BackgroundImage = (Image)resources.GetObject("BtnA1.BackgroundImage");
             BtnA1.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnA1.Location = new Point(37, 32);
+            BtnA1.Location = new Point(42, 43);
+            BtnA1.Margin = new Padding(3, 4, 3, 4);
             BtnA1.Name = "BtnA1";
-            BtnA1.Size = new Size(117, 70);
+            BtnA1.Size = new Size(134, 93);
             BtnA1.TabIndex = 1;
             BtnA1.UseVisualStyleBackColor = true;
             BtnA1.Click += BtnA1_Click;
@@ -332,9 +345,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 458);
+            pictureBox2.Location = new Point(0, 611);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(846, 72);
+            pictureBox2.Size = new Size(967, 96);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 19;
             pictureBox2.TabStop = false;
@@ -342,52 +356,13 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.cinema_wallpaper_social_media_message_background_vector;
-            pictureBox1.Location = new Point(6, 6);
+            pictureBox1.Location = new Point(7, 8);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(834, 524);
+            pictureBox1.Size = new Size(953, 699);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
-            // 
-            // TabPageSelectionRow
-            // 
-            TabPageSelectionRow.BackgroundImage = (Image)resources.GetObject("TabPageSelectionRow.BackgroundImage");
-            TabPageSelectionRow.BackgroundImageLayout = ImageLayout.Stretch;
-            TabPageSelectionRow.Controls.Add(BtnCasual);
-            TabPageSelectionRow.Controls.Add(BtnVIP);
-            TabPageSelectionRow.Location = new Point(4, 24);
-            TabPageSelectionRow.Name = "TabPageSelectionRow";
-            TabPageSelectionRow.Padding = new Padding(3);
-            TabPageSelectionRow.Size = new Size(846, 589);
-            TabPageSelectionRow.TabIndex = 1;
-            TabPageSelectionRow.Text = "Seleciona tu fila";
-            TabPageSelectionRow.UseVisualStyleBackColor = true;
-            // 
-            // BtnCasual
-            // 
-            BtnCasual.BackgroundImage = (Image)resources.GetObject("BtnCasual.BackgroundImage");
-            BtnCasual.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnCasual.Font = new Font("Stencil", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnCasual.ForeColor = Color.FromArgb(192, 0, 0);
-            BtnCasual.Location = new Point(512, 224);
-            BtnCasual.Name = "BtnCasual";
-            BtnCasual.Size = new Size(158, 93);
-            BtnCasual.TabIndex = 1;
-            BtnCasual.Text = "Casual";
-            BtnCasual.UseVisualStyleBackColor = true;
-            BtnCasual.Click += BtnCasual_Click;
-            // 
-            // BtnVIP
-            // 
-            BtnVIP.BackgroundImage = (Image)resources.GetObject("BtnVIP.BackgroundImage");
-            BtnVIP.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnVIP.Location = new Point(169, 217);
-            BtnVIP.Name = "BtnVIP";
-            BtnVIP.Size = new Size(158, 106);
-            BtnVIP.TabIndex = 0;
-            BtnVIP.Text = "VIP";
-            BtnVIP.UseVisualStyleBackColor = true;
-            BtnVIP.Click += BtnVIP_Click;
             // 
             // TabPageCandyShop
             // 
@@ -421,20 +396,20 @@
             TabPageCandyShop.Controls.Add(pictureBox5);
             TabPageCandyShop.Controls.Add(pictureBox4);
             TabPageCandyShop.Controls.Add(pictureBox3);
-            TabPageCandyShop.Location = new Point(4, 24);
-            TabPageCandyShop.Margin = new Padding(3, 2, 3, 2);
+            TabPageCandyShop.Location = new Point(4, 29);
             TabPageCandyShop.Name = "TabPageCandyShop";
-            TabPageCandyShop.Padding = new Padding(3, 2, 3, 2);
-            TabPageCandyShop.Size = new Size(846, 589);
+            TabPageCandyShop.Padding = new Padding(3);
+            TabPageCandyShop.Size = new Size(968, 790);
             TabPageCandyShop.TabIndex = 2;
             TabPageCandyShop.Text = "Dulceria";
             TabPageCandyShop.UseVisualStyleBackColor = true;
             // 
             // BtnNext
             // 
-            BtnNext.Location = new Point(512, 542);
+            BtnNext.Location = new Point(585, 723);
+            BtnNext.Margin = new Padding(3, 4, 3, 4);
             BtnNext.Name = "BtnNext";
-            BtnNext.Size = new Size(75, 23);
+            BtnNext.Size = new Size(86, 31);
             BtnNext.TabIndex = 67;
             BtnNext.Text = "Siguiente";
             BtnNext.UseVisualStyleBackColor = true;
@@ -443,142 +418,140 @@
             // Lblshift
             // 
             Lblshift.AutoSize = true;
-            Lblshift.Location = new Point(692, 28);
+            Lblshift.Location = new Point(791, 37);
             Lblshift.Name = "Lblshift";
-            Lblshift.Size = new Size(0, 15);
+            Lblshift.Size = new Size(0, 20);
             Lblshift.TabIndex = 66;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(600, 28);
+            label7.Location = new Point(686, 37);
             label7.Name = "label7";
-            label7.Size = new Size(80, 15);
+            label7.Size = new Size(101, 20);
             label7.TabIndex = 65;
             label7.Text = "Truno Boleto: ";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(187, 460);
+            label5.Location = new Point(198, 620);
             label5.Name = "label5";
-            label5.Size = new Size(38, 15);
+            label5.Size = new Size(47, 20);
             label5.TabIndex = 64;
             label5.Text = "Costo";
             // 
             // comboBox4
             // 
             comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(254, 473);
-            comboBox4.Margin = new Padding(3, 2, 3, 2);
+            comboBox4.Location = new Point(290, 641);
             comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(133, 23);
+            comboBox4.Size = new Size(151, 28);
             comboBox4.TabIndex = 63;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(187, 490);
+            label6.Location = new Point(198, 649);
             label6.Name = "label6";
-            label6.Size = new Size(28, 15);
+            label6.Size = new Size(36, 20);
             label6.TabIndex = 62;
             label6.Text = "2.5$";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(173, 179);
+            label3.Location = new Point(198, 239);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(47, 20);
             label3.TabIndex = 61;
             label3.Text = "Costo";
             // 
             // comboBox3
             // 
             comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(254, 203);
-            comboBox3.Margin = new Padding(3, 2, 3, 2);
+            comboBox3.Location = new Point(290, 271);
             comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(133, 23);
+            comboBox3.Size = new Size(151, 28);
             comboBox3.TabIndex = 60;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(173, 209);
+            label4.Location = new Point(198, 279);
             label4.Name = "label4";
-            label4.Size = new Size(28, 15);
+            label4.Size = new Size(36, 20);
             label4.TabIndex = 59;
-            label4.Text = "2.5$";
+            label4.Text = "1.5$";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(173, 326);
+            label1.Location = new Point(198, 435);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(47, 20);
             label1.TabIndex = 58;
             label1.Text = "Costo";
             // 
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(254, 328);
-            comboBox2.Margin = new Padding(3, 2, 3, 2);
+            comboBox2.Location = new Point(290, 437);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(133, 23);
+            comboBox2.Size = new Size(151, 28);
             comboBox2.TabIndex = 57;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(173, 356);
+            label2.Location = new Point(198, 475);
             label2.Name = "label2";
-            label2.Size = new Size(28, 15);
+            label2.Size = new Size(29, 20);
             label2.TabIndex = 56;
-            label2.Text = "2.5$";
+            label2.Text = "3 $";
             // 
             // LblCost
             // 
             LblCost.AutoSize = true;
-            LblCost.Location = new Point(173, 49);
+            LblCost.Location = new Point(198, 65);
             LblCost.Name = "LblCost";
-            LblCost.Size = new Size(38, 15);
+            LblCost.Size = new Size(47, 20);
             LblCost.TabIndex = 55;
             LblCost.Text = "Costo";
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(254, 73);
-            comboBox1.Margin = new Padding(3, 2, 3, 2);
+            comboBox1.Location = new Point(290, 97);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(133, 23);
+            comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 54;
             // 
             // LbPopCornCost
             // 
             LbPopCornCost.AutoSize = true;
-            LbPopCornCost.Location = new Point(173, 79);
+            LbPopCornCost.Location = new Point(198, 105);
             LbPopCornCost.Name = "LbPopCornCost";
-            LbPopCornCost.Size = new Size(28, 15);
+            LbPopCornCost.Size = new Size(36, 20);
             LbPopCornCost.TabIndex = 53;
             LbPopCornCost.Text = "2.5$";
             // 
             // BtnCancelar
             // 
-            BtnCancelar.Location = new Point(605, 542);
+            BtnCancelar.Location = new Point(691, 723);
+            BtnCancelar.Margin = new Padding(3, 4, 3, 4);
             BtnCancelar.Name = "BtnCancelar";
-            BtnCancelar.Size = new Size(75, 23);
+            BtnCancelar.Size = new Size(86, 31);
             BtnCancelar.TabIndex = 52;
             BtnCancelar.Text = "Cancelar";
             BtnCancelar.UseVisualStyleBackColor = true;
             // 
             // BtnOkey
             // 
-            BtnOkey.Location = new Point(704, 542);
+            BtnOkey.Location = new Point(805, 723);
+            BtnOkey.Margin = new Padding(3, 4, 3, 4);
             BtnOkey.Name = "BtnOkey";
-            BtnOkey.Size = new Size(114, 23);
+            BtnOkey.Size = new Size(130, 31);
             BtnOkey.TabIndex = 51;
             BtnOkey.Text = "Imprimir ticket";
             BtnOkey.UseVisualStyleBackColor = true;
@@ -586,36 +559,40 @@
             // 
             // BtnNachos
             // 
-            BtnNachos.Location = new Point(512, 472);
+            BtnNachos.Location = new Point(585, 638);
+            BtnNachos.Margin = new Padding(3, 4, 3, 4);
             BtnNachos.Name = "BtnNachos";
-            BtnNachos.Size = new Size(75, 23);
+            BtnNachos.Size = new Size(86, 31);
             BtnNachos.TabIndex = 50;
             BtnNachos.Text = "agregar";
             BtnNachos.UseVisualStyleBackColor = true;
             // 
             // BtnHotDoog
             // 
-            BtnHotDoog.Location = new Point(512, 326);
+            BtnHotDoog.Location = new Point(585, 435);
+            BtnHotDoog.Margin = new Padding(3, 4, 3, 4);
             BtnHotDoog.Name = "BtnHotDoog";
-            BtnHotDoog.Size = new Size(75, 23);
+            BtnHotDoog.Size = new Size(86, 31);
             BtnHotDoog.TabIndex = 49;
             BtnHotDoog.Text = "agregar";
             BtnHotDoog.UseVisualStyleBackColor = true;
             // 
             // BtnSoda
             // 
-            BtnSoda.Location = new Point(512, 201);
+            BtnSoda.Location = new Point(585, 268);
+            BtnSoda.Margin = new Padding(3, 4, 3, 4);
             BtnSoda.Name = "BtnSoda";
-            BtnSoda.Size = new Size(75, 23);
+            BtnSoda.Size = new Size(86, 31);
             BtnSoda.TabIndex = 48;
             BtnSoda.Text = "agregar";
             BtnSoda.UseVisualStyleBackColor = true;
             // 
             // BtnPopCorn
             // 
-            BtnPopCorn.Location = new Point(512, 70);
+            BtnPopCorn.Location = new Point(585, 93);
+            BtnPopCorn.Margin = new Padding(3, 4, 3, 4);
             BtnPopCorn.Name = "BtnPopCorn";
-            BtnPopCorn.Size = new Size(75, 23);
+            BtnPopCorn.Size = new Size(86, 31);
             BtnPopCorn.TabIndex = 47;
             BtnPopCorn.Text = "agregar";
             BtnPopCorn.UseVisualStyleBackColor = true;
@@ -623,45 +600,46 @@
             // LblNachos
             // 
             LblNachos.AutoSize = true;
-            LblNachos.Location = new Point(61, 546);
+            LblNachos.Location = new Point(70, 728);
             LblNachos.Name = "LblNachos";
-            LblNachos.Size = new Size(47, 15);
+            LblNachos.Size = new Size(58, 20);
             LblNachos.TabIndex = 46;
             LblNachos.Text = "Nachos";
             // 
             // LblHotDoog
             // 
             LblHotDoog.AutoSize = true;
-            LblHotDoog.Location = new Point(57, 409);
+            LblHotDoog.Location = new Point(65, 545);
             LblHotDoog.Name = "LblHotDoog";
-            LblHotDoog.Size = new Size(56, 15);
+            LblHotDoog.Size = new Size(72, 20);
             LblHotDoog.TabIndex = 45;
             LblHotDoog.Text = "HotDoog";
             // 
             // LblSoda
             // 
             LblSoda.AutoSize = true;
-            LblSoda.Location = new Point(61, 276);
+            LblSoda.Location = new Point(70, 368);
             LblSoda.Name = "LblSoda";
-            LblSoda.Size = new Size(52, 15);
+            LblSoda.Size = new Size(66, 20);
             LblSoda.TabIndex = 44;
             LblSoda.Text = "Refresco";
             // 
             // LblPopCorn
             // 
             LblPopCorn.AutoSize = true;
-            LblPopCorn.Location = new Point(54, 142);
+            LblPopCorn.Location = new Point(62, 189);
             LblPopCorn.Name = "LblPopCorn";
-            LblPopCorn.Size = new Size(59, 15);
+            LblPopCorn.Size = new Size(73, 20);
             LblPopCorn.TabIndex = 43;
             LblPopCorn.Text = "Palomitas";
             // 
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(29, 432);
+            pictureBox6.Location = new Point(33, 576);
+            pictureBox6.Margin = new Padding(3, 4, 3, 4);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(112, 111);
+            pictureBox6.Size = new Size(128, 148);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 42;
             pictureBox6.TabStop = false;
@@ -669,9 +647,10 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(29, 162);
+            pictureBox5.Location = new Point(33, 216);
+            pictureBox5.Margin = new Padding(3, 4, 3, 4);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(112, 111);
+            pictureBox5.Size = new Size(128, 148);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 41;
             pictureBox5.TabStop = false;
@@ -679,9 +658,10 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(29, 295);
+            pictureBox4.Location = new Point(33, 393);
+            pictureBox4.Margin = new Padding(3, 4, 3, 4);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(112, 111);
+            pictureBox4.Size = new Size(128, 148);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 40;
             pictureBox4.TabStop = false;
@@ -689,9 +669,10 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(29, 28);
+            pictureBox3.Location = new Point(33, 37);
+            pictureBox3.Margin = new Padding(3, 4, 3, 4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(112, 111);
+            pictureBox3.Size = new Size(128, 148);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 39;
             pictureBox3.TabStop = false;
@@ -699,19 +680,21 @@
             // TabPageAdmin
             // 
             TabPageAdmin.Controls.Add(BtnShow);
-            TabPageAdmin.Location = new Point(4, 24);
+            TabPageAdmin.Location = new Point(4, 29);
+            TabPageAdmin.Margin = new Padding(3, 4, 3, 4);
             TabPageAdmin.Name = "TabPageAdmin";
-            TabPageAdmin.Padding = new Padding(3);
-            TabPageAdmin.Size = new Size(846, 589);
+            TabPageAdmin.Padding = new Padding(3, 4, 3, 4);
+            TabPageAdmin.Size = new Size(968, 790);
             TabPageAdmin.TabIndex = 3;
             TabPageAdmin.Text = "Administracion";
             TabPageAdmin.UseVisualStyleBackColor = true;
             // 
             // BtnShow
             // 
-            BtnShow.Location = new Point(87, 95);
+            BtnShow.Location = new Point(99, 127);
+            BtnShow.Margin = new Padding(3, 4, 3, 4);
             BtnShow.Name = "BtnShow";
-            BtnShow.Size = new Size(121, 46);
+            BtnShow.Size = new Size(138, 61);
             BtnShow.TabIndex = 0;
             BtnShow.Text = "Mostrar el orden de los boletos";
             BtnShow.UseVisualStyleBackColor = true;
@@ -723,6 +706,7 @@
             Column1.HeaderText = "Column1";
             Column1.MinimumWidth = 6;
             Column1.Name = "Column1";
+            Column1.Width = 125;
             // 
             // Column2
             // 
@@ -754,17 +738,17 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(878, 641);
+            ClientSize = new Size(1003, 855);
             Controls.Add(TabContrleCinema);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             TabContrleCinema.ResumeLayout(false);
             TabPageTicket.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            TabPageSelectionRow.ResumeLayout(false);
             TabPageCandyShop.ResumeLayout(false);
             TabPageCandyShop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
@@ -779,7 +763,6 @@
 
         private TabControl TabContrleCinema;
         private TabPage TabPageTicket;
-        private TabPage TabPageSelectionRow;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
@@ -832,8 +815,6 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
         private TabPage TabPageCandy;
-        private Button BtnCasual;
-        private Button BtnVIP;
         private Label Lblshift;
         private Label label7;
         private Button BtnNext;

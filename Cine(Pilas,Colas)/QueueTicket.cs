@@ -13,51 +13,48 @@ namespace Cine_Pilas_Colas_
         //linked-list de Tickets 
 
 
-        public Node front; // Primer elemento (frente de la cola)
-        public Node rear;  // Último elemento (final de la cola)
+        public Node head; // Primer elemento (frente de la cola)
+
 
         public QueueTicket()
         {
-            front = null;
-            rear = null;
+            head = null;
         }
 
         // Método para agregar un ticket a la cola
         public void Enqueue(Ticket_Cine ticket)
         {
+            Node current = head;
             Node newNode = new Node(ticket);
 
-            if (rear == null) // Si la cola está vacía
+            if (head == null) // Si la cola está vacía
             {
-                front = newNode;
-                rear = newNode;
+                head = newNode;
             }
             else
             {
-                rear.Next = newNode; // El nodo actual al final apunta al nuevo nodo
-                rear = newNode;      // El nuevo nodo se convierte en el último
+                newNode.Next = head;
+                head = newNode;
+
             }
         }
 
+
         public string Dequeue()
         {
+            Node current = head;
             string Ticket = ""; 
-            if (front == null) // Si la cola está vacía
+            if (head == null) // Si la cola está vacía
             {
                 MessageBox.Show("La cola está vacía.");
                 Ticket = "";
                 return Ticket;
             }
-
-            Ticket_Cine ticket = front.Ticket; // Guardar el ticket del nodo en el frente
-            front = front.Next;                // Mover el frente al siguiente nodo
-
-            if (front == null) // Si la cola ahora está vacía, rear también debe ser null
+            while(current.Next != null)
             {
-                rear = null;
+                current.Next = head.Next; // Guardar el ticket del nodo en el frente
+                head = head.Next;               // Mover el frente al siguiente nodo
             }
-            
-            Ticket = ticket.ToString();
 
             return Ticket;
         }
@@ -66,23 +63,23 @@ namespace Cine_Pilas_Colas_
         public string Peek() 
         {
             string Ticket = "";
-            if (front == null)
+            if (head == null)
             {
                 MessageBox.Show("La cola esta vacia, nadie esta en espera");
             }
             else
             {
-                Ticket = "\n" + front.Ticket.ToString();
+                Ticket = "\n" + head.Ticket.ToString();
             }
             return Ticket;
         }
 
-        public bool IsEmpty() => front == null;
+        public bool IsEmpty() => head == null;
 
         public int Size()
         {
             int count = 0;
-            Node current = front;
+            Node current = head;
 
             // Recorre la cola desde el frente hasta el final
             while (current != null)
