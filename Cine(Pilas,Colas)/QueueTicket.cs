@@ -9,10 +9,6 @@ namespace Cine_Pilas_Colas_
     internal class QueueTicket
     {
 
-        // Cola para clientes regulares en compra de boletos
-        //linked-list de Tickets 
-
-
         public Node head; // Primer elemento (frente de la cola)
 
 
@@ -21,43 +17,46 @@ namespace Cine_Pilas_Colas_
             head = null;
         }
 
-        // Método para agregar un ticket a la cola
         public void Enqueue(Ticket_Cine ticket)
         {
-            Node current = head;
-            Node newNode = new Node(ticket);
+            Node newNode = new Node(ticket); // Crea un nuevo nodo con el ticket
 
             if (head == null) // Si la cola está vacía
             {
-                head = newNode;
+                head = newNode; // El nuevo nodo es la cabeza de la cola
             }
             else
             {
-                newNode.Next = head;
-                head = newNode;
-
+                Node current = head;
+                // Recorre la cola hasta el último nodo
+                while (current.Next != null)
+                {
+                    current = current.Next;
+                }
+                // Asigna el nuevo nodo como el siguiente del último nodo
+                current.Next = newNode;
             }
         }
 
 
         public string Dequeue()
         {
-            Node current = head;
-            string Ticket = ""; 
+            string ticket = "";
             if (head == null) // Si la cola está vacía
             {
-                MessageBox.Show("La cola está vacía.");
-                Ticket = "";
-                return Ticket;
-            }
-            while(current.Next != null)
-            {
-                current.Next = head.Next; // Guardar el ticket del nodo en el frente
-                head = head.Next;               // Mover el frente al siguiente nodo
+                ticket = "La cola está vacía.";
+                return ticket; // Devuelve una cadena vacía si la cola está vacía
             }
 
-            return Ticket;
+            // Guarda el ticket del nodo en el frente
+            ticket = head.Ticket.ToString();
+
+            // Mueve la cabeza al siguiente nodo (elimina el primero)
+            head = head.Next;
+
+            return ticket; // Devuelve el ticket del nodo eliminado
         }
+
 
 
         public string Peek() 

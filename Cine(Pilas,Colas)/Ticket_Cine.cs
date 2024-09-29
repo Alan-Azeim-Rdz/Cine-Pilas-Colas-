@@ -25,7 +25,7 @@ namespace Cine_Pilas_Colas_
         // Método para mostrar información del ticket
         public override string ToString()
         {
-            return NumeroTicket + " " + "\n" + Seat + "\n" + IsPremium;
+            return "Numero = " + NumeroTicket + "\n Aciento = " + Seat + "\n Es Premium = " + IsPremium;
         }
 
 

@@ -366,20 +366,19 @@ namespace Cine_Pilas_Colas_
 
         private void BtnMostrarColas_Click(object sender, EventArgs e)
         {
-            if (TicketQueueP.IsEmpty() == true)
+            if (!TicketQueueP.IsEmpty() == false)
             {
+                TabContrleCinema.SelectedIndex = 1;
                 Lblshift.Text = TicketQueue.Dequeue();
-
             }
-            if (TicketQueue.IsEmpty() == true)
+            else if (!TicketQueue.IsEmpty() == true)
             {
+                TabContrleCinema.SelectedIndex = 1;
                 Lblshift.Text = TicketQueueP.Dequeue();
             }
-            else
-            {
-                MessageBox.Show("no hay nada aqui mano");
-            }
+
         }
+
 
         private void BtnOkey_Click(object sender, EventArgs e)
         {
@@ -393,7 +392,21 @@ namespace Cine_Pilas_Colas_
 
         private void BtnNext_Click(object sender, EventArgs e)
         {
-            Lblshift.Text = TicketQueue.Dequeue();
+            // Primero, verificamos si la cola premium NO está vacía
+            if (!TicketQueueP.IsEmpty())
+            {
+                Lblshift.Text = TicketQueueP.Dequeue(); // Si tiene elementos, se hace Dequeue
+            }
+            // Si la cola premium está vacía, verificamos la cola regular
+            else if (!TicketQueue.IsEmpty())
+            {
+                Lblshift.Text = TicketQueue.Dequeue(); // Si la cola regular tiene elementos, se hace Dequeue
+            }
+            else
+            {
+                // Si ambas colas están vacías, mostramos un mensaje
+                Lblshift.Text = "No hay más clientes en espera.";
+            }
         }
     }
 }
