@@ -50,6 +50,7 @@ namespace Cine_Pilas_Colas_
 
             // Guarda el ticket del nodo en el frente
             ticket = head.Ticket.ToString();
+            MessageBox.Show(ticket);
 
             // Mueve la cabeza al siguiente nodo (elimina el primero)
             head = head.Next;
@@ -65,6 +66,7 @@ namespace Cine_Pilas_Colas_
             if (head == null)
             {
                 MessageBox.Show("La cola esta vacia, nadie esta en espera");
+                Ticket = "No hay personas en espera";
             }
             else
             {

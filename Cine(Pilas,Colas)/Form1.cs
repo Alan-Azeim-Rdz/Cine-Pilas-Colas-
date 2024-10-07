@@ -41,11 +41,13 @@ namespace Cine_Pilas_Colas_
                 // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
                 // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -63,12 +65,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -86,12 +92,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -108,12 +118,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -130,12 +144,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -152,12 +170,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -174,12 +196,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -196,12 +222,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -218,12 +248,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -240,12 +274,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -262,12 +300,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -284,12 +326,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -306,12 +352,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -328,12 +378,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
@@ -350,12 +404,16 @@ namespace Cine_Pilas_Colas_
             // Llamar al método Question para determinar si es premium
             if (Question())
             {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
                 TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(TicketQueueP.Peek());
             }
             else
             {
+                // Si no es premium, agregar a la cola regular
                 TicketQueue.Enqueue(ticket);
+                MessageBox.Show(TicketQueue.Peek());
             }
         }
 
