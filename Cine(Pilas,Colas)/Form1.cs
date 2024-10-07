@@ -15,6 +15,7 @@ namespace Cine_Pilas_Colas_
         }
         QueueTicket TicketQueue = new QueueTicket();
         QueueTicket TicketQueueP = new QueueTicket();
+        QueueStaticPre_sale asasa = new QueueStaticPre_sale();
 
         // Método que pregunta si el cliente tiene membresía premium
         public bool Question()
@@ -465,6 +466,14 @@ namespace Cine_Pilas_Colas_
                 // Si ambas colas están vacías, mostramos un mensaje
                 Lblshift.Text = "No hay más clientes en espera.";
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Ticket_Cine se = new Ticket_Cine(1,"a","a");
+
+            asasa.Enqueue(se);
+
         }
     }
 }

@@ -8,82 +8,81 @@ namespace Cine_Pilas_Colas_
 {
     internal class QueueStaticPre_sale
     {
-        public class Queue
+        private Ticket_Cine[] PreSale;   // Arreglo para almacenar los elementos de la cola
+        private int count;     // Número de elementos en la cola
+
+
+        // Constructor para inicializar la cola
+        public QueueStaticPre_sale()
         {
-            private Ticket_Cine[] PreSale;   // Arreglo para almacenar los elementos de la cola
-            private int count;     // Número de elementos en la cola
+            PreSale = new Ticket_Cine[5];
+            count = 0;  // La cola está vacía
+        }
 
-            // Constructor para inicializar la cola
-            public Queue()
+
+        // Método para agregar un elemento a la cola (enqueue)
+        public void Enqueue(Ticket_Cine item)
+        {
+            if (IsFull())
             {
-                PreSale = new Ticket_Cine[5];
-                count = 0;  // La cola está vacía
-            }
-
-            // Método para agregar un elemento a la cola (enqueue)
-            public void Enqueue(Ticket_Cine item)
-            {
-                if (IsFull())
-                {
-                    MessageBox.Show("Lo siento ya no hay ma boletos disponibles para la pre-compra");
-                    return;
-                }
-
-                // Agregar el elemento al final de la cola (en la posición `count`)
-                PreSale[count] = item;
-                count++;  // Incrementar el número de elementos
+                MessageBox.Show("Lo siento ya no hay ma boletos disponibles para la pre-compra");
                 return;
             }
 
-            // Método para eliminar y devolver el elemento del frente de la cola (dequeue)
-            public string Dequeue()
+            // Agregar el elemento al final de la cola (en la posición `count`)
+            PreSale[count] = item;
+            count++;  // Incrementar el número de elementos
+        }
+
+
+        // Método para eliminar y devolver el elemento del frente de la cola (dequeue)
+        public string Dequeue()
+        {
+            string ticket = "";
+            if (IsEmpty())
             {
-                string ticket = "";
-                if (IsEmpty())
-                {
-                    ticket = "No hay tickets para eliminar";
-                    return ticket; // Devuelve un valor indicativo de error, o puede lanzar una excepción
-                }
-
-                // Guardar el primer elemento en una variable
-                Ticket_Cine item = PreSale[0];
-
-                // Mover todos los elementos hacia adelante
-                for (int i = 1; i < count; i++)
-                {
-                    PreSale[i - 1] = PreSale[i];
-                }
-
-                count--; // Disminuir el contador de elementos
-                return item.ToString();
+                ticket = "No hay tickets para eliminar";
+                return ticket; // Devuelve un valor indicativo de error, o puede lanzar una excepción
             }
 
-            // Método para verificar si la cola está llena
-            public bool IsFull()
+            // Guardar el primer elemento en una variable
+            Ticket_Cine item = PreSale[0];
+
+            // Mover todos los elementos hacia adelante
+            for (int i = 1; i < count; i++)
             {
-                return Convert.ToBoolean( count = PreSale.Length);
+                PreSale[i - 1] = PreSale[i];
             }
 
-            // Método para verificar si la cola está vacía
-            public bool IsEmpty()
+            count--; // Disminuir el contador de elementos
+            return item.ToString();
+        }
+
+        // Método para verificar si la cola está llena
+        public bool IsFull()
+        {
+            return count == PreSale.Length;
+        }
+
+        // Método para verificar si la cola está vacía
+        public bool IsEmpty()
+        {
+            return count == 0;
+        }
+
+        // Método para obtener el elemento en el frente de la cola sin eliminarlo
+        public string Peek()
+        {
+            string ticket;
+            if (IsEmpty())
             {
-                return count == 0;
-            }
-
-            // Método para obtener el elemento en el frente de la cola sin eliminarlo
-            public string Peek()
-            {
-                string ticket;
-                if (IsEmpty())
-                {
-                    ticket = "No han comprado Tickets";
-                    return ticket;
-                }
-
-                ticket = PreSale[0].ToString();
-
+                ticket = "No han comprado Tickets";
                 return ticket;
             }
+
+            ticket = PreSale[0].ToString();
+
+            return ticket;
         }
 
 

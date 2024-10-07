@@ -87,6 +87,7 @@
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
+            button1 = new Button();
             TabContrleCinema.SuspendLayout();
             TabPageTicket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -112,6 +113,7 @@
             // 
             // TabPageTicket
             // 
+            TabPageTicket.Controls.Add(button1);
             TabPageTicket.Controls.Add(BtnMostrarColas);
             TabPageTicket.Controls.Add(LblPantalla);
             TabPageTicket.Controls.Add(BtnC5);
@@ -133,8 +135,8 @@
             TabPageTicket.Controls.Add(pictureBox1);
             TabPageTicket.Location = new Point(4, 24);
             TabPageTicket.Name = "TabPageTicket";
-            TabPageTicket.Padding = new Padding(3, 3, 3, 3);
-            TabPageTicket.Size = new Size(846, 589);
+            TabPageTicket.Padding = new Padding(3);
+            TabPageTicket.Size = new Size(921, 589);
             TabPageTicket.TabIndex = 0;
             TabPageTicket.Text = "Acientos Boletos";
             TabPageTicket.UseVisualStyleBackColor = true;
@@ -656,8 +658,8 @@
             TabPageAdmin.Controls.Add(BtnShow);
             TabPageAdmin.Location = new Point(4, 24);
             TabPageAdmin.Name = "TabPageAdmin";
-            TabPageAdmin.Padding = new Padding(3, 3, 3, 3);
-            TabPageAdmin.Size = new Size(846, 589);
+            TabPageAdmin.Padding = new Padding(3);
+            TabPageAdmin.Size = new Size(921, 589);
             TabPageAdmin.TabIndex = 3;
             TabPageAdmin.Text = "Administracion";
             TabPageAdmin.UseVisualStyleBackColor = true;
@@ -706,6 +708,17 @@
             Column5.MinimumWidth = 6;
             Column5.Name = "Column5";
             Column5.Width = 125;
+            // 
+            // button1
+            // 
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Zoom;
+            button1.Location = new Point(189, 533);
+            button1.Name = "button1";
+            button1.Size = new Size(117, 50);
+            button1.TabIndex = 35;
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
@@ -790,5 +803,6 @@
         private Button BtnNext;
         private TabPage TabPageAdmin;
         private Button BtnShow;
+        private Button button1;
     }
 }
