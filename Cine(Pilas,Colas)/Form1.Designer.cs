@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             TabContrleCinema = new TabControl();
             TabPageTicket = new TabPage();
+            button1 = new Button();
             BtnMostrarColas = new Button();
             LblPantalla = new Label();
             BtnC5 = new Button();
@@ -87,7 +88,6 @@
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
-            button1 = new Button();
             TabContrleCinema.SuspendLayout();
             TabPageTicket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -140,6 +140,17 @@
             TabPageTicket.TabIndex = 0;
             TabPageTicket.Text = "Acientos Boletos";
             TabPageTicket.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Zoom;
+            button1.Location = new Point(189, 533);
+            button1.Name = "button1";
+            button1.Size = new Size(117, 50);
+            button1.TabIndex = 35;
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // BtnMostrarColas
             // 
@@ -708,17 +719,6 @@
             Column5.MinimumWidth = 6;
             Column5.Name = "Column5";
             Column5.Width = 125;
-            // 
-            // button1
-            // 
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Zoom;
-            button1.Location = new Point(189, 533);
-            button1.Name = "button1";
-            button1.Size = new Size(117, 50);
-            button1.TabIndex = 35;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // Form1
             // 

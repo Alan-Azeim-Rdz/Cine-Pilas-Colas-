@@ -41,21 +41,17 @@ namespace Cine_Pilas_Colas_
 
         public string Dequeue()
         {
-            string ticket = "";
-            if (head == null) // Si la cola está vacía
+            if (head != null) // Si la cola está vacía
             {
-                ticket = "La cola está vacía.";
-                return ticket; // Devuelve una cadena vacía si la cola está vacía
+
+                string DataTicket = head.Ticket.ToString(); // Devuelve el ticket del nodo eliminado
+                // Mueve la cabeza al siguiente nodo (elimina el primero)
+                head = head.Next;
+                return DataTicket;
+
             }
+            return "La cola está vacía."; // Devuelve una cadena vacía si la cola está vacía
 
-            // Guarda el ticket del nodo en el frente
-            ticket = head.Ticket.ToString();
-            MessageBox.Show(ticket);
-
-            // Mueve la cabeza al siguiente nodo (elimina el primero)
-            head = head.Next;
-
-            return ticket; // Devuelve el ticket del nodo eliminado
         }
 
 
@@ -63,16 +59,13 @@ namespace Cine_Pilas_Colas_
         public string Peek() 
         {
             string Ticket = "";
-            if (head == null)
+            if (head != null)
             {
-                MessageBox.Show("La cola esta vacia, nadie esta en espera");
-                Ticket = "No hay personas en espera";
+
+                return "La cola esta vacia, nadie esta en espera";
             }
-            else
-            {
-                Ticket = "\n" + head.Ticket.ToString();
-            }
-            return Ticket;
+
+            return head.Ticket.ToString();
         }
 
         public bool IsEmpty() => head == null;

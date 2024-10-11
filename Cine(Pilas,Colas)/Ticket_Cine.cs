@@ -13,7 +13,13 @@ namespace Cine_Pilas_Colas_
         public string Seat { get; set; }
         public string IsPremium { get; set; } // Flag para cliente premium
 
+        public Ticket_Cine()
+        {
+            NumeroTicket = 0;
+            Seat = "";
+            IsPremium = "";
 
+        }
         // Constructor para inicializar el ticket
         public Ticket_Cine(int numeroTicket, string seat, string isPremium)
         {

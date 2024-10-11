@@ -15,7 +15,7 @@ namespace Cine_Pilas_Colas_
         }
         QueueTicket TicketQueue = new QueueTicket();
         QueueTicket TicketQueueP = new QueueTicket();
-        QueueStaticPre_sale asasa = new QueueStaticPre_sale();
+        Ticket_Cine ticket = new Ticket_Cine();
 
         // Método que pregunta si el cliente tiene membresía premium
         public bool Question()
@@ -34,22 +34,7 @@ namespace Cine_Pilas_Colas_
             Seat = "A1";
 
             // Crear el ticket
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
-
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            ProcessTicket(NumberAcent, Seat);
         }
 
 
@@ -61,22 +46,8 @@ namespace Cine_Pilas_Colas_
             BtnA2.BackColor = System.Drawing.Color.Gray;
             Seat = "A2";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
-
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
 
@@ -88,22 +59,8 @@ namespace Cine_Pilas_Colas_
             BtnA3.BackColor = System.Drawing.Color.Gray;
             Seat = "A3";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
-
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
         private void BtnA4_Click(object sender, EventArgs e)
@@ -114,22 +71,9 @@ namespace Cine_Pilas_Colas_
             BtnA4.BackColor = System.Drawing.Color.Gray;
             Seat = "A4";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
 
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
         private void BtnA5_Click(object sender, EventArgs e)
@@ -140,22 +84,8 @@ namespace Cine_Pilas_Colas_
             BtnA5.BackColor = System.Drawing.Color.Gray;
             Seat = "A5";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
-
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
         private void BtnB1_Click(object sender, EventArgs e)
@@ -166,22 +96,9 @@ namespace Cine_Pilas_Colas_
             BtnB1.BackColor = System.Drawing.Color.Gray;
             Seat = "B1";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
 
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
         private void BtnB2_Click(object sender, EventArgs e)
@@ -192,22 +109,8 @@ namespace Cine_Pilas_Colas_
             BtnB2.BackColor = System.Drawing.Color.Gray;
             Seat = "B2";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
-
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
         private void BtnB3_Click(object sender, EventArgs e)
@@ -218,22 +121,8 @@ namespace Cine_Pilas_Colas_
             BtnB3.BackColor = System.Drawing.Color.Gray;
             Seat = "B3";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
-
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
         private void BtnB4_Click(object sender, EventArgs e)
@@ -244,22 +133,8 @@ namespace Cine_Pilas_Colas_
             BtnB4.BackColor = System.Drawing.Color.Gray;
             Seat = "B4";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
-
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
         private void BtnB5_Click(object sender, EventArgs e)
@@ -270,22 +145,8 @@ namespace Cine_Pilas_Colas_
             BtnB5.BackColor = System.Drawing.Color.Gray;
             Seat = "B5";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
-
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
         private void BtnC1_Click(object sender, EventArgs e)
@@ -296,22 +157,8 @@ namespace Cine_Pilas_Colas_
             BtnC1.BackColor = System.Drawing.Color.Gray;
             Seat = "C1";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
-
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
         private void BtnC2_Click(object sender, EventArgs e)
@@ -322,22 +169,8 @@ namespace Cine_Pilas_Colas_
             BtnC2.BackColor = System.Drawing.Color.Gray;
             Seat = "C2";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
-
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
         private void BtnC3_Click(object sender, EventArgs e)
@@ -348,22 +181,8 @@ namespace Cine_Pilas_Colas_
             BtnC3.BackColor = System.Drawing.Color.Gray;
             Seat = "C3";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
-
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
         private void BtnC4_Click(object sender, EventArgs e)
@@ -374,22 +193,8 @@ namespace Cine_Pilas_Colas_
             BtnC4.BackColor = System.Drawing.Color.Gray;
             Seat = "C4";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
-
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
         private void BtnC5_Click(object sender, EventArgs e)
@@ -400,22 +205,8 @@ namespace Cine_Pilas_Colas_
             BtnC5.BackColor = System.Drawing.Color.Gray;
             Seat = "C5";
 
-            Ticket_Cine ticket = new Ticket_Cine(NumberAcent, Seat, "");
-
-            // Llamar al método Question para determinar si es premium
-            if (Question())
-            {
-                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
-                ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
-                MessageBox.Show(TicketQueueP.Peek());
-            }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                TicketQueue.Enqueue(ticket);
-                MessageBox.Show(TicketQueue.Peek());
-            }
+            // Crear el ticket
+            ProcessTicket(NumberAcent, Seat);
         }
 
         private void BtnPopCorn_Click(object sender, EventArgs e)
@@ -430,11 +221,13 @@ namespace Cine_Pilas_Colas_
                 TabContrleCinema.SelectedIndex = 1;
                 Lblshift.Text = TicketQueue.Dequeue();
             }
-            else if (!TicketQueue.IsEmpty() == true)
+            else
             {
                 TabContrleCinema.SelectedIndex = 1;
                 Lblshift.Text = TicketQueueP.Dequeue();
             }
+
+
 
         }
 
@@ -468,11 +261,30 @@ namespace Cine_Pilas_Colas_
             }
         }
 
+        public void ProcessTicket(int numberAcent, string seat)
+        {
+            // Crear el ticket del cine
+            Ticket_Cine ticket = new Ticket_Cine(numberAcent, seat, "");
+
+            // Llamar al método Question para determinar si es premium
+            if (Question())
+            {
+                // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
+                ticket.IsPremium = "si";
+                TicketQueueP.Enqueue(ticket);
+                MessageBox.Show(ticket.ToString());
+            }
+            else
+            {
+                // Si no es premium, agregar a la cola regular
+                ticket.IsPremium = "no";
+                TicketQueue.Enqueue(ticket);
+                MessageBox.Show(ticket.ToString());
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            Ticket_Cine se = new Ticket_Cine(1,"a","a");
-
-            asasa.Enqueue(se);
 
         }
     }
