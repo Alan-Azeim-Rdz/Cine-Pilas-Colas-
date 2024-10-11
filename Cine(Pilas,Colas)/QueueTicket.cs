@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -55,20 +56,22 @@ namespace Cine_Pilas_Colas_
         }
 
 
-
         public string Peek() 
         {
-            string Ticket = "";
             if (head != null)
             {
+                return head.Ticket.ToString();
 
-                return "La cola esta vacia, nadie esta en espera";
             }
+            return "La cola esta vacia, nadie esta en espera";
 
-            return head.Ticket.ToString();
         }
 
-        public bool IsEmpty() => head == null;
+
+        public bool IsEmpty() 
+        {
+            return head == null;
+        }
 
         public int Size()
         {

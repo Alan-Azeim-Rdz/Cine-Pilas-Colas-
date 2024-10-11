@@ -238,8 +238,8 @@ namespace Cine_Pilas_Colas_
 
         private void BtnShow_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("En la cola Prioridad hay " + TicketQueueP.Size().ToString() + " en fila");
-            MessageBox.Show("En la cola hay " + TicketQueue.Size().ToString() + " en la fila");
+            MessageBox.Show("En la fila premium hay " + TicketQueueP.Size().ToString() + " personas en fila");
+            MessageBox.Show("En la fila normal hay " + TicketQueue.Size().ToString() + " personas en la fila");
         }
 
         private void BtnNext_Click(object sender, EventArgs e)
@@ -247,7 +247,7 @@ namespace Cine_Pilas_Colas_
             // Primero, verificamos si la cola premium NO está vacía
             if (!TicketQueueP.IsEmpty())
             {
-                Lblshift.Text = TicketQueueP.Dequeue(); // Si tiene elementos, se hace Dequeue
+                Lblshift.Text = TicketQueueP.Dequeue(); //   Si tiene elementos, se hace Dequeue
             }
             // Si la cola premium está vacía, verificamos la cola regular
             else if (!TicketQueue.IsEmpty())
@@ -283,9 +283,9 @@ namespace Cine_Pilas_Colas_
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnCancelar_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show( TicketQueue.Peek());
         }
     }
 }
