@@ -5,17 +5,18 @@ namespace Cine_Pilas_Colas_
 {
     public partial class Form1 : Form
     {
-        int NumberAcent = 0;
-        string Seat = "";
+        int number_acent = 0;
+        string seat = "";
 
         public Form1()
         {
 
             InitializeComponent();
         }
-        QueueTicket TicketQueue = new QueueTicket();
-        QueueTicket TicketQueueP = new QueueTicket();
+        QueueTicket ticketqueue = new QueueTicket();
+        QueueTicket ticketqueue_p = new QueueTicket();
         Ticket_Cine ticket = new Ticket_Cine();
+        QueueEstaticSale sale = new QueueEstaticSale();
 
         // Método que pregunta si el cliente tiene membresía premium
         public bool Question()
@@ -24,235 +25,227 @@ namespace Cine_Pilas_Colas_
             return result == DialogResult.Yes;
         }
 
-        // Método para el botón BtnA1
+
+        //cinema seats
+
         private void BtnA1_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnA1.Enabled = false;
             BtnA1.BackgroundImage = null;
             BtnA1.BackColor = System.Drawing.Color.Gray;
-            Seat = "A1";
+            seat = "A1";
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
 
         private void BtnA2_Click_1(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnA2.Enabled = false;
             BtnA2.BackgroundImage = null;
             BtnA2.BackColor = System.Drawing.Color.Gray;
-            Seat = "A2";
+            seat = "A2";
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
 
         private void BtnA3_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnA3.Enabled = false;
             BtnA3.BackgroundImage = null;
             BtnA3.BackColor = System.Drawing.Color.Gray;
-            Seat = "A3";
+            seat = "A3";
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
         private void BtnA4_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnA4.Enabled = false;
             BtnA4.BackgroundImage = null;
             BtnA4.BackColor = System.Drawing.Color.Gray;
-            Seat = "A4";
+            seat = "A4";
 
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
         private void BtnA5_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnA5.Enabled = false;
             BtnA5.BackgroundImage = null;
             BtnA5.BackColor = System.Drawing.Color.Gray;
-            Seat = "A5";
+            seat = "A5";
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
         private void BtnB1_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnB1.Enabled = false;
             BtnB1.BackgroundImage = null;
             BtnB1.BackColor = System.Drawing.Color.Gray;
-            Seat = "B1";
+            seat = "B1";
 
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
         private void BtnB2_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnB2.Enabled = false;
             BtnB2.BackgroundImage = null;
             BtnB2.BackColor = System.Drawing.Color.Gray;
-            Seat = "B2";
+            seat = "B2";
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
         private void BtnB3_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnB3.Enabled = false;
             BtnB3.BackgroundImage = null;
             BtnB3.BackColor = System.Drawing.Color.Gray;
-            Seat = "B3";
+            seat = "B3";
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
         private void BtnB4_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnB4.Enabled = false;
             BtnB4.BackgroundImage = null;
             BtnB4.BackColor = System.Drawing.Color.Gray;
-            Seat = "B4";
+            seat = "B4";
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
         private void BtnB5_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnB5.Enabled = false;
             BtnB5.BackgroundImage = null;
             BtnB5.BackColor = System.Drawing.Color.Gray;
-            Seat = "B5";
+            seat = "B5";
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
         private void BtnC1_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnC1.Enabled = false;
             BtnC1.BackgroundImage = null;
             BtnC1.BackColor = System.Drawing.Color.Gray;
-            Seat = "C1";
+            seat = "C1";
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
         private void BtnC2_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnC2.Enabled = false;
             BtnC2.BackgroundImage = null;
             BtnC2.BackColor = System.Drawing.Color.Gray;
-            Seat = "C2";
+            seat = "C2";
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
         private void BtnC3_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnC3.Enabled = false;
             BtnC3.BackgroundImage = null;
             BtnC3.BackColor = System.Drawing.Color.Gray;
-            Seat = "C3";
+            seat = "C3";
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
         private void BtnC4_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnC4.Enabled = false;
             BtnC4.BackgroundImage = null;
             BtnC4.BackColor = System.Drawing.Color.Gray;
-            Seat = "C4";
+            seat = "C4";
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
         private void BtnC5_Click(object sender, EventArgs e)
         {
-            NumberAcent++;
+            number_acent++;
             BtnC5.Enabled = false;
             BtnC5.BackgroundImage = null;
             BtnC5.BackColor = System.Drawing.Color.Gray;
-            Seat = "C5";
+            seat = "C5";
 
             // Crear el ticket
-            ProcessTicket(NumberAcent, Seat);
+            ProcessTicket(number_acent, seat);
         }
 
-        private void BtnPopCorn_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void BtnMostrarColas_Click(object sender, EventArgs e)
         {
-            if (!TicketQueueP.IsEmpty() == false)
+            if (!ticketqueue_p.IsEmpty() == false)
             {
                 TabContrleCinema.SelectedIndex = 1;
-                Lblshift.Text = TicketQueue.Dequeue();
+                Lblshift.Text = ticketqueue.Dequeue();
             }
             else
             {
                 TabContrleCinema.SelectedIndex = 1;
-                Lblshift.Text = TicketQueueP.Dequeue();
+                Lblshift.Text = ticketqueue_p.Dequeue();
             }
-
-
-
         }
 
 
-        private void BtnOkey_Click(object sender, EventArgs e)
-        {
-        }
 
         private void BtnShow_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("En la fila premium hay " + TicketQueueP.Size().ToString() + " personas en fila");
-            MessageBox.Show("En la fila normal hay " + TicketQueue.Size().ToString() + " personas en la fila");
+            MessageBox.Show("En la fila premium hay " + ticketqueue_p.Size().ToString() + " personas en fila");
+            MessageBox.Show("En la fila normal hay " + ticketqueue.Size().ToString() + " personas en la fila");
         }
 
         private void BtnNext_Click(object sender, EventArgs e)
         {
             // Primero, verificamos si la cola premium NO está vacía
-            if (!TicketQueueP.IsEmpty())
+            if (!ticketqueue_p.IsEmpty())
             {
-                Lblshift.Text = TicketQueueP.Dequeue(); //   Si tiene elementos, se hace Dequeue
+                Lblshift.Text = ticketqueue_p.Dequeue(); //   Si tiene elementos, se hace Dequeue
             }
             // Si la cola premium está vacía, verificamos la cola regular
-            else if (!TicketQueue.IsEmpty())
+            else if (!ticketqueue.IsEmpty())
             {
-                Lblshift.Text = TicketQueue.Dequeue(); // Si la cola regular tiene elementos, se hace Dequeue
+                Lblshift.Text = ticketqueue.Dequeue(); // Si la cola regular tiene elementos, se hace Dequeue
             }
             else
             {
@@ -271,21 +264,29 @@ namespace Cine_Pilas_Colas_
             {
                 // Si es premium, actualizar la propiedad y agregar a la cola de prioridad
                 ticket.IsPremium = "si";
-                TicketQueueP.Enqueue(ticket);
+                ticketqueue_p.Enqueue(ticket);
                 MessageBox.Show(ticket.ToString());
             }
             else
             {
                 // Si no es premium, agregar a la cola regular
                 ticket.IsPremium = "no";
-                TicketQueue.Enqueue(ticket);
+                ticketqueue.Enqueue(ticket);
                 MessageBox.Show(ticket.ToString());
             }
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show( TicketQueue.Peek());
+            MessageBox.Show(ticketqueue.Peek());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+
+            sale.Enqueue(ticket);
+        }
+
     }
 }
