@@ -19,7 +19,7 @@ namespace Cine_Pilas_Colas_
 
         public bool IsEmpty() 
         {  
-            return count == 0; 
+            return count == 0; ;
         }
 
         public bool IsFull() 
