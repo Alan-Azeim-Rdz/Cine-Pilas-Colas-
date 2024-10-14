@@ -19,7 +19,7 @@ namespace Cine_Pilas_Colas_
 
         public bool IsEmpty() 
         {  
-            return count == 0; ;
+            return count == 0;
         }
 
         public bool IsFull() 
@@ -42,6 +42,20 @@ namespace Cine_Pilas_Colas_
             count++;
             return;
 
+        }
+
+        public string Dequeue()
+        {
+            if (IsEmpty())
+            {
+                return "La cola está vacía.";
+            }
+            if (IsFull()) 
+            {
+
+            
+            }
+            return "La cola está vacía.";
         }
 
 
