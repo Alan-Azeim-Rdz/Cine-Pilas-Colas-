@@ -22,7 +22,7 @@ namespace Cine_Pilas_Colas_
         {
             Node newNode = new Node(ticket); // Crea un nuevo nodo con el ticket
 
-            if (head == null) // Si la cola está vacía
+            if (IsEmpty()) // Si la cola está vacía
             {
                 head = newNode; // El nuevo nodo es la cabeza de la cola
             }
@@ -42,7 +42,7 @@ namespace Cine_Pilas_Colas_
 
         public string Dequeue()
         {
-            if (head != null) // Si la cola está vacía
+            if (!IsEmpty()) // Si la cola está vacía
             {
 
                 string DataTicket = head.Ticket.ToString(); // Devuelve el ticket del nodo eliminado
@@ -58,7 +58,7 @@ namespace Cine_Pilas_Colas_
 
         public string Peek() 
         {
-            if (head != null)
+            if (!IsEmpty())
             {
                 return head.Ticket.ToString();
 

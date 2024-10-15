@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Cine_Pilas_Colas_
 {
@@ -50,12 +51,16 @@ namespace Cine_Pilas_Colas_
             {
                 return "La cola está vacía.";
             }
-            if (IsFull()) 
-            {
 
-            
+            string ticket = ticket_sale[0].ToString();
+
+            // Desplazar los elementos restantes hacia la izquierda
+            for (int i = 0; i < count; i++)
+            {
+                ticket_sale[i] = ticket_sale[i + 1];
             }
-            return "La cola está vacía.";
+
+            return ticket;
         }
 
 
