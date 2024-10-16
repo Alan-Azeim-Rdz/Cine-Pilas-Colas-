@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Diagnostics.Eventing.Reader;
 using System.Windows.Forms;
 
@@ -15,8 +16,9 @@ namespace Cine_Pilas_Colas_
         }
         QueueTicket ticketqueue = new QueueTicket();
         QueueTicket ticketqueue_p = new QueueTicket();
+        QueueTicket tickets = new QueueTicket();
         Ticket_Cine ticket = new Ticket_Cine();
-        QueueEstaticSale sale = new QueueEstaticSale();
+        QueueEstaticSale ticketSale = new QueueEstaticSale();
 
         // Método que pregunta si el cliente tiene membresía premium
         public bool Question()
@@ -281,12 +283,9 @@ namespace Cine_Pilas_Colas_
             MessageBox.Show(ticketqueue.Peek());
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BtnSale_Click(object sender, EventArgs e)
         {
-
-
-            sale.Enqueue(ticket);
+           ticketSale.Enqueue(ticket);
         }
-
     }
 }

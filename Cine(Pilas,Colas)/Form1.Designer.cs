@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             TabContrleCinema = new TabControl();
             TabPageTicket = new TabPage();
-            button2 = new Button();
+            BtnSale = new Button();
             BtnMostrarColas = new Button();
             LblPantalla = new Label();
             BtnC5 = new Button();
@@ -113,7 +113,7 @@
             // 
             // TabPageTicket
             // 
-            TabPageTicket.Controls.Add(button2);
+            TabPageTicket.Controls.Add(BtnSale);
             TabPageTicket.Controls.Add(BtnMostrarColas);
             TabPageTicket.Controls.Add(LblPantalla);
             TabPageTicket.Controls.Add(BtnC5);
@@ -141,16 +141,16 @@
             TabPageTicket.Text = "Acientos Boletos";
             TabPageTicket.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnSale
             // 
-            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
-            button2.BackgroundImageLayout = ImageLayout.Zoom;
-            button2.Location = new Point(37, 536);
-            button2.Name = "button2";
-            button2.Size = new Size(117, 50);
-            button2.TabIndex = 36;
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            BtnSale.BackgroundImage = (Image)resources.GetObject("BtnSale.BackgroundImage");
+            BtnSale.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnSale.Location = new Point(37, 517);
+            BtnSale.Name = "BtnSale";
+            BtnSale.Size = new Size(117, 82);
+            BtnSale.TabIndex = 36;
+            BtnSale.UseVisualStyleBackColor = true;
+            BtnSale.Click += BtnSale_Click;
             // 
             // BtnMostrarColas
             // 
@@ -803,6 +803,6 @@
         private Button BtnNext;
         private TabPage TabPageAdmin;
         private Button BtnShow;
-        private Button button2;
+        private Button BtnSale;
     }
 }

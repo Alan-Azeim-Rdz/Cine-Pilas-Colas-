@@ -15,7 +15,7 @@ namespace Cine_Pilas_Colas_
         public QueueEstaticSale()
         {
             count = 0;
-            ticket_sale = new Ticket_Cine[1];
+            ticket_sale = new Ticket_Cine[5];
         }
 
         public bool IsEmpty() 
@@ -35,11 +35,8 @@ namespace Cine_Pilas_Colas_
                 MessageBox.Show("ya no hay boletos que califiquen al descuento");
                 return;
             }
-            if (IsEmpty())
-            {
-                ticket_sale[count] = ticketSale;
-              
-            }
+            ticket_sale[count] = ticketSale;
+
             count++;
             return;
 
@@ -60,8 +57,28 @@ namespace Cine_Pilas_Colas_
                 ticket_sale[i] = ticket_sale[i + 1];
             }
 
+            count--;
             return ticket;
         }
+
+        public string Peek()
+        {
+            if (IsEmpty())
+            {
+                return "La cola está vacía.";
+            }
+
+            string ticket = ticket_sale[0].ToString();
+
+            // Devolver el ticket en la posición del frente sin eliminarlo
+            return ticket;
+        }
+
+        public int Size()
+        {
+            return ticket_sale.Length;
+        }
+
 
 
     }
