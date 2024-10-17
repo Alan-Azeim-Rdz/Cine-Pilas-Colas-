@@ -71,6 +71,7 @@ namespace Cine_Pilas_Colas_
         public bool IsEmpty() 
         {
             return head == null;
+
         }
 
         public int Size()
@@ -85,7 +86,8 @@ namespace Cine_Pilas_Colas_
                 current = current.Next; // Avanza al siguiente nodo
             }
 
-            return count; // Devuelve el número total de elementos
+            return count; // Devuelve el número total de elementos Size: gets the number of objects in the queue 
+
         }
 
     }

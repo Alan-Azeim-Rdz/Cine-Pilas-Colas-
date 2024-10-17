@@ -18,7 +18,6 @@ namespace Cine_Pilas_Colas_
         QueueTicket ticketqueue_p = new QueueTicket();
         QueueTicket tickets = new QueueTicket();
         Ticket_Cine ticket = new Ticket_Cine();
-        QueueEstaticSale ticketSale = new QueueEstaticSale();
 
         // Método que pregunta si el cliente tiene membresía premium
         public bool Question()
@@ -221,20 +220,13 @@ namespace Cine_Pilas_Colas_
             {
                 TabContrleCinema.SelectedIndex = 1;
                 Lblshift.Text = ticketqueue.Dequeue();
+                return;
             }
-            else
-            {
-                TabContrleCinema.SelectedIndex = 1;
-                Lblshift.Text = ticketqueue_p.Dequeue();
-            }
-        }
 
+            TabContrleCinema.SelectedIndex = 1;
+            Lblshift.Text = ticketqueue_p.Dequeue();
+            return;
 
-
-        private void BtnShow_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("En la fila premium hay " + ticketqueue_p.Size().ToString() + " personas en fila");
-            MessageBox.Show("En la fila normal hay " + ticketqueue.Size().ToString() + " personas en la fila");
         }
 
         private void BtnNext_Click(object sender, EventArgs e)
@@ -243,17 +235,16 @@ namespace Cine_Pilas_Colas_
             if (!ticketqueue_p.IsEmpty())
             {
                 Lblshift.Text = ticketqueue_p.Dequeue(); //   Si tiene elementos, se hace Dequeue
+                return;
             }
             // Si la cola premium está vacía, verificamos la cola regular
-            else if (!ticketqueue.IsEmpty())
+            if (!ticketqueue.IsEmpty())
             {
                 Lblshift.Text = ticketqueue.Dequeue(); // Si la cola regular tiene elementos, se hace Dequeue
+                return;
             }
-            else
-            {
-                // Si ambas colas están vacías, mostramos un mensaje
-                Lblshift.Text = "No hay más clientes en espera.";
-            }
+            // Si ambas colas están vacías, mostramos un mensaje
+            Lblshift.Text = "No hay más clientes \n en espera.";
         }
 
         public void ProcessTicket(int numberAcent, string seat)
@@ -268,24 +259,31 @@ namespace Cine_Pilas_Colas_
                 ticket.IsPremium = "si";
                 ticketqueue_p.Enqueue(ticket);
                 MessageBox.Show(ticket.ToString());
+                return;
             }
-            else
-            {
-                // Si no es premium, agregar a la cola regular
-                ticket.IsPremium = "no";
-                ticketqueue.Enqueue(ticket);
-                MessageBox.Show(ticket.ToString());
-            }
+            // Si no es premium, agregar a la cola regular
+            ticket.IsPremium = "no";
+            ticketqueue.Enqueue(ticket);
+            MessageBox.Show(ticket.ToString());
+
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(ticketqueue.Peek());
+            if (!ticketqueue_p.IsEmpty()) 
+            {
+                MessageBox.Show(ticketqueue_p.Peek());
+                return;
+            }
+            if (!ticketqueue.IsEmpty())
+            {
+                MessageBox.Show(ticketqueue.Peek());
+                return;
+            }
+
+            MessageBox.Show("No hay nadie en espera");
+
         }
 
-        private void BtnSale_Click(object sender, EventArgs e)
-        {
-           ticketSale.Enqueue(ticket);
-        }
     }
 }
