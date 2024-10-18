@@ -53,6 +53,8 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             TabPageCandyShop = new TabPage();
+            BtnPersonTotal = new Button();
+            BtnPersonTotalPriority = new Button();
             BtnNext = new Button();
             Lblshift = new Label();
             label7 = new Label();
@@ -338,6 +340,8 @@
             // TabPageCandyShop
             // 
             TabPageCandyShop.AutoScroll = true;
+            TabPageCandyShop.Controls.Add(BtnPersonTotal);
+            TabPageCandyShop.Controls.Add(BtnPersonTotalPriority);
             TabPageCandyShop.Controls.Add(BtnNext);
             TabPageCandyShop.Controls.Add(Lblshift);
             TabPageCandyShop.Controls.Add(label7);
@@ -350,6 +354,26 @@
             TabPageCandyShop.TabIndex = 2;
             TabPageCandyShop.Text = "Dulceria";
             TabPageCandyShop.UseVisualStyleBackColor = true;
+            // 
+            // BtnPersonTotal
+            // 
+            BtnPersonTotal.Location = new Point(908, 496);
+            BtnPersonTotal.Name = "BtnPersonTotal";
+            BtnPersonTotal.Size = new Size(168, 23);
+            BtnPersonTotal.TabIndex = 69;
+            BtnPersonTotal.Text = "Cantidad fila normal";
+            BtnPersonTotal.UseVisualStyleBackColor = true;
+            BtnPersonTotal.Click += BtnPersonTotal_Click;
+            // 
+            // BtnPersonTotalPriority
+            // 
+            BtnPersonTotalPriority.Location = new Point(908, 542);
+            BtnPersonTotalPriority.Name = "BtnPersonTotalPriority";
+            BtnPersonTotalPriority.Size = new Size(168, 23);
+            BtnPersonTotalPriority.TabIndex = 68;
+            BtnPersonTotalPriority.Text = "Cantidad fila premium";
+            BtnPersonTotalPriority.UseVisualStyleBackColor = true;
+            BtnPersonTotalPriority.Click += BtnPersonTotalPriority_Click;
             // 
             // BtnNext
             // 
@@ -480,5 +504,7 @@
         private Button BtnNext;
         private Label label2;
         private Button BtnVIP;
+        private Button BtnPersonTotal;
+        private Button BtnPersonTotalPriority;
     }
 }

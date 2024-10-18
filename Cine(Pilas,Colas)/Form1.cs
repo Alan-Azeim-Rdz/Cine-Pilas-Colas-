@@ -386,5 +386,15 @@ namespace Cine_Pilas_Colas_
                 ticket.IsPremium = "si"; // Si está desactivado, es premium
             }
         }
+
+        private void BtnPersonTotal_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("hay " + ticketqueue.Size() + " esperando su turno");
+        }
+
+        private void BtnPersonTotalPriority_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("hay " + ticketqueue_p.Size() + " esperando su turno");
+        }
     }
 }
