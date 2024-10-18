@@ -20,21 +20,19 @@ namespace Cine_Pilas_Colas_
 
         public void Enqueue(Ticket_Cine ticket)
         {
-            Node newNode = new Node(ticket); // Crea un nuevo nodo con el ticket
+            Node newNode = new Node(ticket); 
 
-            if (IsEmpty()) // Si la cola está vacía
+            if (IsEmpty()) 
             {
-                head = newNode; // El nuevo nodo es la cabeza de la cola
+                head = newNode; 
             }
             else
             {
                 Node current = head;
-                // Recorre la cola hasta el último nodo
                 while (current.Next != null)
                 {
                     current = current.Next;
                 }
-                // Asigna el nuevo nodo como el siguiente del último nodo
                 current.Next = newNode;
             }
         }
@@ -42,16 +40,15 @@ namespace Cine_Pilas_Colas_
 
         public string Dequeue()
         {
-            if (!IsEmpty()) // Si la cola está vacía
+            if (!IsEmpty()) 
             {
 
-                string DataTicket = head.Ticket.ToString(); // Devuelve el ticket del nodo eliminado
-                // Mueve la cabeza al siguiente nodo (elimina el primero)
+                string DataTicket = head.Ticket.ToString(); 
                 head = head.Next;
                 return DataTicket;
 
             }
-            return "La cola está vacía."; // Devuelve una cadena vacía si la cola está vacía
+            return "La cola está vacía.";
 
         }
 

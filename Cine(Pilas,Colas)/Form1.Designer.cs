@@ -31,7 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             TabContrleCinema = new TabControl();
             TabPageTicket = new TabPage();
-            BtnMostrarColas = new Button();
+            label2 = new Label();
+            BtnVIP = new Button();
+            BtnTicketNormal = new Button();
             LblPantalla = new Label();
             BtnC5 = new Button();
             BtnC4 = new Button();
@@ -74,12 +76,14 @@
             TabContrleCinema.Location = new Point(12, 12);
             TabContrleCinema.Name = "TabContrleCinema";
             TabContrleCinema.SelectedIndex = 0;
-            TabContrleCinema.Size = new Size(929, 617);
+            TabContrleCinema.Size = new Size(1117, 617);
             TabContrleCinema.TabIndex = 0;
             // 
             // TabPageTicket
             // 
-            TabPageTicket.Controls.Add(BtnMostrarColas);
+            TabPageTicket.Controls.Add(label2);
+            TabPageTicket.Controls.Add(BtnVIP);
+            TabPageTicket.Controls.Add(BtnTicketNormal);
             TabPageTicket.Controls.Add(LblPantalla);
             TabPageTicket.Controls.Add(BtnC5);
             TabPageTicket.Controls.Add(BtnC4);
@@ -101,21 +105,41 @@
             TabPageTicket.Location = new Point(4, 24);
             TabPageTicket.Name = "TabPageTicket";
             TabPageTicket.Padding = new Padding(3);
-            TabPageTicket.Size = new Size(921, 589);
+            TabPageTicket.Size = new Size(1109, 589);
             TabPageTicket.TabIndex = 0;
             TabPageTicket.Text = "Acientos Boletos";
             TabPageTicket.UseVisualStyleBackColor = true;
             // 
-            // BtnMostrarColas
+            // label2
             // 
-            BtnMostrarColas.BackgroundImage = (Image)resources.GetObject("BtnMostrarColas.BackgroundImage");
-            BtnMostrarColas.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnMostrarColas.Location = new Point(723, 533);
-            BtnMostrarColas.Name = "BtnMostrarColas";
-            BtnMostrarColas.Size = new Size(117, 50);
-            BtnMostrarColas.TabIndex = 34;
-            BtnMostrarColas.UseVisualStyleBackColor = true;
-            BtnMostrarColas.Click += BtnMostrarColas_Click;
+            label2.AutoSize = true;
+            label2.Location = new Point(943, 281);
+            label2.Name = "label2";
+            label2.Size = new Size(64, 15);
+            label2.TabIndex = 37;
+            label2.Text = "Cliente VIP";
+            // 
+            // BtnVIP
+            // 
+            BtnVIP.BackgroundImage = (Image)resources.GetObject("BtnVIP.BackgroundImage");
+            BtnVIP.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnVIP.Location = new Point(849, 55);
+            BtnVIP.Name = "BtnVIP";
+            BtnVIP.Size = new Size(257, 214);
+            BtnVIP.TabIndex = 35;
+            BtnVIP.UseVisualStyleBackColor = true;
+            BtnVIP.Click += BtnVIP_Click;
+            // 
+            // BtnTicketNormal
+            // 
+            BtnTicketNormal.BackgroundImage = (Image)resources.GetObject("BtnTicketNormal.BackgroundImage");
+            BtnTicketNormal.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnTicketNormal.Location = new Point(6, 533);
+            BtnTicketNormal.Name = "BtnTicketNormal";
+            BtnTicketNormal.Size = new Size(117, 50);
+            BtnTicketNormal.TabIndex = 34;
+            BtnTicketNormal.UseVisualStyleBackColor = true;
+            BtnTicketNormal.Click += BtnTicketNormal_Click;
             // 
             // LblPantalla
             // 
@@ -322,7 +346,7 @@
             TabPageCandyShop.Margin = new Padding(3, 2, 3, 2);
             TabPageCandyShop.Name = "TabPageCandyShop";
             TabPageCandyShop.Padding = new Padding(3, 2, 3, 2);
-            TabPageCandyShop.Size = new Size(921, 589);
+            TabPageCandyShop.Size = new Size(1109, 589);
             TabPageCandyShop.TabIndex = 2;
             TabPageCandyShop.Text = "Dulceria";
             TabPageCandyShop.UseVisualStyleBackColor = true;
@@ -406,12 +430,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(953, 641);
+            ClientSize = new Size(1141, 683);
             Controls.Add(TabContrleCinema);
             Name = "Form1";
             Text = "Form1";
             TabContrleCinema.ResumeLayout(false);
             TabPageTicket.ResumeLayout(false);
+            TabPageTicket.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             TabPageCandyShop.ResumeLayout(false);
@@ -446,12 +471,14 @@
         private Button BtnA2;
         private Button BtnA1;
         private Label LblPantalla;
-        private Button BtnMostrarColas;
+        private Button BtnTicketNormal;
         private TabPage TabPageCandyShop;
         private Button BtnQuestionForNex;
         private TabPage TabPageCandy;
         private Label Lblshift;
         private Label label7;
         private Button BtnNext;
+        private Label label2;
+        private Button BtnVIP;
     }
 }
