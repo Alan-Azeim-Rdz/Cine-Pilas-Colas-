@@ -33,7 +33,7 @@
             TabPageTicket = new TabPage();
             label2 = new Label();
             BtnVIP = new Button();
-            BtnTicketNormal = new Button();
+            BtnTicket = new Button();
             LblPantalla = new Label();
             BtnC5 = new Button();
             BtnC4 = new Button();
@@ -85,7 +85,7 @@
             // 
             TabPageTicket.Controls.Add(label2);
             TabPageTicket.Controls.Add(BtnVIP);
-            TabPageTicket.Controls.Add(BtnTicketNormal);
+            TabPageTicket.Controls.Add(BtnTicket);
             TabPageTicket.Controls.Add(LblPantalla);
             TabPageTicket.Controls.Add(BtnC5);
             TabPageTicket.Controls.Add(BtnC4);
@@ -132,16 +132,16 @@
             BtnVIP.UseVisualStyleBackColor = true;
             BtnVIP.Click += BtnVIP_Click;
             // 
-            // BtnTicketNormal
+            // BtnTicket
             // 
-            BtnTicketNormal.BackgroundImage = (Image)resources.GetObject("BtnTicketNormal.BackgroundImage");
-            BtnTicketNormal.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnTicketNormal.Location = new Point(6, 533);
-            BtnTicketNormal.Name = "BtnTicketNormal";
-            BtnTicketNormal.Size = new Size(117, 50);
-            BtnTicketNormal.TabIndex = 34;
-            BtnTicketNormal.UseVisualStyleBackColor = true;
-            BtnTicketNormal.Click += BtnTicketNormal_Click;
+            BtnTicket.BackgroundImage = (Image)resources.GetObject("BtnTicket.BackgroundImage");
+            BtnTicket.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnTicket.Location = new Point(6, 533);
+            BtnTicket.Name = "BtnTicket";
+            BtnTicket.Size = new Size(117, 50);
+            BtnTicket.TabIndex = 34;
+            BtnTicket.UseVisualStyleBackColor = true;
+            BtnTicket.Click += BtnTicket_Click;
             // 
             // LblPantalla
             // 
@@ -413,7 +413,7 @@
             BtnQuestionForNex.TabIndex = 52;
             BtnQuestionForNex.Text = "Proximo";
             BtnQuestionForNex.UseVisualStyleBackColor = true;
-            BtnQuestionForNex.Click += BtnCancelar_Click;
+            BtnQuestionForNex.Click += BtnQuestionForNex_Click;
             // 
             // Column1
             // 
@@ -495,7 +495,7 @@
         private Button BtnA2;
         private Button BtnA1;
         private Label LblPantalla;
-        private Button BtnTicketNormal;
+        private Button BtnTicket;
         private TabPage TabPageDataOfTicket;
         private Button BtnQuestionForNex;
         private TabPage TabPageCandy;

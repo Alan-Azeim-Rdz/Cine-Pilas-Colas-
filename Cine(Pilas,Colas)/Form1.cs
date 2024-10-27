@@ -295,7 +295,39 @@ namespace Cine_Pilas_Colas_
             ProcessTicket(node);
         }
 
+        private void BtnTicket_Click(object sender, EventArgs e)
+        {
+            // Primero verifica si hay elementos en la cola de prioridad
+            if (!ticketqueue_p.IsEmpty())
+            {
+                TabContrleCinema.SelectedIndex = 1;
+                // Desencola de la cola de prioridad y muestra el elemento
+                Lblshift.Text = ticketqueue_p.Dequeue().ToString();
+                return;
+            }
 
+            TabContrleCinema.SelectedIndex = 1;
+            // Desencola de la cola normal y muestra el elemento
+            Lblshift.Text = ticketqueue.Dequeue().ToString();
+            return;
+        }
+
+
+        private void BtnQuestionForNex_Click(object sender, EventArgs e)
+        {
+            if (!ticketqueue_p.IsEmpty())
+            {
+                MessageBox.Show(ticketqueue_p.Peek().ToString());
+                return;
+            }
+            if (!ticketqueue.IsEmpty())
+            {
+                MessageBox.Show(ticketqueue.Peek().ToString());
+                return;
+            }
+
+            MessageBox.Show("No hay nadie en espera");
+        }
 
         private void BtnNext_Click(object sender, EventArgs e)
         {
@@ -333,40 +365,9 @@ namespace Cine_Pilas_Colas_
 
         }
 
-        private void BtnCancelar_Click(object sender, EventArgs e)
-        {
-            if (!ticketqueue_p.IsEmpty())
-            {
-                MessageBox.Show(ticketqueue_p.Peek().ToString());
-                return;
-            }
-            if (!ticketqueue.IsEmpty())
-            {
-                MessageBox.Show(ticketqueue.Peek().ToString());
-                return;
-            }
 
-            MessageBox.Show("No hay nadie en espera");
 
-        }
 
-        private void BtnTicketNormal_Click(object sender, EventArgs e)
-        {
-            // Primero verifica si hay elementos en la cola de prioridad
-            if (!ticketqueue_p.IsEmpty())
-            {
-                TabContrleCinema.SelectedIndex = 1;
-                // Desencola de la cola de prioridad y muestra el elemento
-                Lblshift.Text = ticketqueue_p.Dequeue().ToString();
-                return;
-            }
-
-            TabContrleCinema.SelectedIndex = 1;
-            // Desencola de la cola normal y muestra el elemento
-            Lblshift.Text = ticketqueue.Dequeue().ToString();
-            return;
-
-        }
 
         private void BtnVIP_Click(object sender, EventArgs e)
         {
@@ -395,5 +396,7 @@ namespace Cine_Pilas_Colas_
         {
             MessageBox.Show("hay " + ticketqueue_p.Size() + " esperando su turno");
         }
+
+
     }
 }
