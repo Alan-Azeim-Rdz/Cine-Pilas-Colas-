@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Cine_Pilas_Colas_
 {
@@ -15,6 +17,11 @@ namespace Cine_Pilas_Colas_
         {
             Ticket = ticket;
             Next = null; // El siguiente nodo inicialmente es null
+        }
+
+        public override string ToString()
+        {
+            return Ticket.ToString();
         }
     }
 }

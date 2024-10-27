@@ -33,13 +33,12 @@ namespace Cine_Pilas_Colas_
             seat = "A1";
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
-
+            ProcessTicket(node);
 
         }
 
@@ -54,12 +53,12 @@ namespace Cine_Pilas_Colas_
 
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
 
@@ -73,12 +72,12 @@ namespace Cine_Pilas_Colas_
 
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
         private void BtnA4_Click(object sender, EventArgs e)
@@ -92,12 +91,12 @@ namespace Cine_Pilas_Colas_
 
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
         private void BtnA5_Click(object sender, EventArgs e)
@@ -110,12 +109,12 @@ namespace Cine_Pilas_Colas_
 
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
         private void BtnB1_Click(object sender, EventArgs e)
@@ -129,12 +128,12 @@ namespace Cine_Pilas_Colas_
 
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
         private void BtnB2_Click(object sender, EventArgs e)
@@ -147,12 +146,12 @@ namespace Cine_Pilas_Colas_
 
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
         private void BtnB3_Click(object sender, EventArgs e)
@@ -165,12 +164,12 @@ namespace Cine_Pilas_Colas_
 
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
         private void BtnB4_Click(object sender, EventArgs e)
@@ -183,12 +182,12 @@ namespace Cine_Pilas_Colas_
 
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
         private void BtnB5_Click(object sender, EventArgs e)
@@ -201,12 +200,12 @@ namespace Cine_Pilas_Colas_
 
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
+            Node node = new Node(ticket);
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
         private void BtnC1_Click(object sender, EventArgs e)
@@ -217,14 +216,15 @@ namespace Cine_Pilas_Colas_
             BtnC1.BackColor = System.Drawing.Color.Gray;
             seat = "C1";
 
+
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
         private void BtnC2_Click(object sender, EventArgs e)
@@ -237,12 +237,12 @@ namespace Cine_Pilas_Colas_
 
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
         private void BtnC3_Click(object sender, EventArgs e)
@@ -255,12 +255,12 @@ namespace Cine_Pilas_Colas_
 
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
         private void BtnC4_Click(object sender, EventArgs e)
@@ -273,12 +273,12 @@ namespace Cine_Pilas_Colas_
 
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
         private void BtnC5_Click(object sender, EventArgs e)
@@ -291,12 +291,12 @@ namespace Cine_Pilas_Colas_
 
             // Crear el ticket
             Ticket_Cine ticket = new Ticket_Cine(number_acent, seat, "");
-
+            Node node = new Node(ticket);
             // Verificar el estado del botón VIP y asignar si es premium o no
             CheckVip(ticket);
 
             // Agregar el ticket a la cola correspondiente
-            ProcessTicket(ticket);
+            ProcessTicket(node);
         }
 
 
@@ -306,13 +306,13 @@ namespace Cine_Pilas_Colas_
             // Primero, verificamos si la cola premium NO está vacía
             if (!ticketqueue_p.IsEmpty())
             {
-                Lblshift.Text = ticketqueue_p.Dequeue(); //   Si tiene elementos, se hace Dequeue
+                Lblshift.Text = ticketqueue_p.Dequeue().ToString(); //   Si tiene elementos, se hace Dequeue
                 return;
             }
             // Si la cola premium está vacía, verificamos la cola regular
             if (!ticketqueue.IsEmpty())
             {
-                Lblshift.Text = ticketqueue.Dequeue(); // Si la cola regular tiene elementos, se hace Dequeue
+                Lblshift.Text = ticketqueue.Dequeue().ToString(); // Si la cola regular tiene elementos, se hace Dequeue
                 return;
             }
             // Si ambas colas están vacías, mostramos un mensaje
@@ -320,20 +320,20 @@ namespace Cine_Pilas_Colas_
         }
 
 
-        private void ProcessTicket(Ticket_Cine ticket)
+        private void ProcessTicket(Node node)
         {
 
             // Llamar al método Question para determinar si es premium
             if (ticket.IsPremium == "si")
             {
-                ticketqueue_p.Enqueue(ticket);
-                MessageBox.Show(ticket.ToString());
+                ticketqueue_p.Enqueue(node);
+                MessageBox.Show(node.ToString());
                 BtnVIP.Enabled = true;
                 return;
 
             }
-            ticketqueue.Enqueue(ticket);
-            MessageBox.Show(ticket.ToString());
+            ticketqueue.Enqueue(node);
+            MessageBox.Show(node.ToString());
             BtnVIP.Enabled = true;
 
         }
@@ -342,12 +342,12 @@ namespace Cine_Pilas_Colas_
         {
             if (!ticketqueue_p.IsEmpty())
             {
-                MessageBox.Show(ticketqueue_p.Peek());
+                MessageBox.Show(ticketqueue_p.Peek().ToString());
                 return;
             }
             if (!ticketqueue.IsEmpty())
             {
-                MessageBox.Show(ticketqueue.Peek());
+                MessageBox.Show(ticketqueue.Peek().ToString());
                 return;
             }
 
@@ -360,12 +360,12 @@ namespace Cine_Pilas_Colas_
             if (!ticketqueue_p.IsEmpty() == false)
             {
                 TabContrleCinema.SelectedIndex = 1;
-                Lblshift.Text = ticketqueue.Dequeue();
+                Lblshift.Text = ticketqueue.Dequeue().ToString();
                 return;
             }
 
             TabContrleCinema.SelectedIndex = 1;
-            Lblshift.Text = ticketqueue_p.Dequeue();
+            Lblshift.Text = ticketqueue_p.Dequeue().ToString();
             return;
         }
 

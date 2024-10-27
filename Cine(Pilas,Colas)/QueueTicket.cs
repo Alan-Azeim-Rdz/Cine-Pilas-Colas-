@@ -18,9 +18,8 @@ namespace Cine_Pilas_Colas_
             head = null;
         }
 
-        public void Enqueue(Ticket_Cine ticket)
+        public void Enqueue(Node newNode)
         {
-            Node newNode = new Node(ticket); 
 
             if (IsEmpty()) 
             {
@@ -38,31 +37,29 @@ namespace Cine_Pilas_Colas_
         }
 
 
-        public string Dequeue()
-        {
-            if (!IsEmpty()) 
-            {
-
-                string DataTicket = head.Ticket.ToString(); 
-                head = head.Next;
-                return DataTicket;
-
-            }
-            return "La cola está vacía.";
-
-        }
-
-
-        public string Peek() 
+        public Node Dequeue()
         {
             if (!IsEmpty())
             {
-                return head.Ticket.ToString();
-
+                Node dequeuedNode = head;
+                head = head.Next;
+                dequeuedNode.Next = null; // Desconectar el nodo desencolado
+                return dequeuedNode;
             }
-            return "La cola esta vacia, nadie esta en espera";
-
+            return null; // Si la cola está vacía
         }
+
+
+       // Obtener el nodo en el frente sin desencolarlo
+        public Node Peek() 
+        {
+            if (!IsEmpty())
+            {
+                return head;
+            }
+            return null; // Si la cola está vacía
+        }
+
 
 
         public bool IsEmpty() 
