@@ -52,7 +52,7 @@
             BtnA1 = new Button();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            TabPageCandyShop = new TabPage();
+            TabPageDataOfTicket = new TabPage();
             BtnPersonTotal = new Button();
             BtnPersonTotalPriority = new Button();
             BtnNext = new Button();
@@ -68,13 +68,13 @@
             TabPageTicket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            TabPageCandyShop.SuspendLayout();
+            TabPageDataOfTicket.SuspendLayout();
             SuspendLayout();
             // 
             // TabContrleCinema
             // 
             TabContrleCinema.Controls.Add(TabPageTicket);
-            TabContrleCinema.Controls.Add(TabPageCandyShop);
+            TabContrleCinema.Controls.Add(TabPageDataOfTicket);
             TabContrleCinema.Location = new Point(12, 12);
             TabContrleCinema.Name = "TabContrleCinema";
             TabContrleCinema.SelectedIndex = 0;
@@ -337,23 +337,23 @@
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
             // 
-            // TabPageCandyShop
+            // TabPageDataOfTicket
             // 
-            TabPageCandyShop.AutoScroll = true;
-            TabPageCandyShop.Controls.Add(BtnPersonTotal);
-            TabPageCandyShop.Controls.Add(BtnPersonTotalPriority);
-            TabPageCandyShop.Controls.Add(BtnNext);
-            TabPageCandyShop.Controls.Add(Lblshift);
-            TabPageCandyShop.Controls.Add(label7);
-            TabPageCandyShop.Controls.Add(BtnQuestionForNex);
-            TabPageCandyShop.Location = new Point(4, 24);
-            TabPageCandyShop.Margin = new Padding(3, 2, 3, 2);
-            TabPageCandyShop.Name = "TabPageCandyShop";
-            TabPageCandyShop.Padding = new Padding(3, 2, 3, 2);
-            TabPageCandyShop.Size = new Size(1109, 589);
-            TabPageCandyShop.TabIndex = 2;
-            TabPageCandyShop.Text = "Dulceria";
-            TabPageCandyShop.UseVisualStyleBackColor = true;
+            TabPageDataOfTicket.AutoScroll = true;
+            TabPageDataOfTicket.Controls.Add(BtnPersonTotal);
+            TabPageDataOfTicket.Controls.Add(BtnPersonTotalPriority);
+            TabPageDataOfTicket.Controls.Add(BtnNext);
+            TabPageDataOfTicket.Controls.Add(Lblshift);
+            TabPageDataOfTicket.Controls.Add(label7);
+            TabPageDataOfTicket.Controls.Add(BtnQuestionForNex);
+            TabPageDataOfTicket.Location = new Point(4, 24);
+            TabPageDataOfTicket.Margin = new Padding(3, 2, 3, 2);
+            TabPageDataOfTicket.Name = "TabPageDataOfTicket";
+            TabPageDataOfTicket.Padding = new Padding(3, 2, 3, 2);
+            TabPageDataOfTicket.Size = new Size(1109, 589);
+            TabPageDataOfTicket.TabIndex = 2;
+            TabPageDataOfTicket.Text = "Datos";
+            TabPageDataOfTicket.UseVisualStyleBackColor = true;
             // 
             // BtnPersonTotal
             // 
@@ -463,8 +463,8 @@
             TabPageTicket.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            TabPageCandyShop.ResumeLayout(false);
-            TabPageCandyShop.PerformLayout();
+            TabPageDataOfTicket.ResumeLayout(false);
+            TabPageDataOfTicket.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -496,7 +496,7 @@
         private Button BtnA1;
         private Label LblPantalla;
         private Button BtnTicketNormal;
-        private TabPage TabPageCandyShop;
+        private TabPage TabPageDataOfTicket;
         private Button BtnQuestionForNex;
         private TabPage TabPageCandy;
         private Label Lblshift;

@@ -24,16 +24,16 @@ namespace Cine_Pilas_Colas_
             if (IsEmpty()) 
             {
                 head = newNode; 
+                return;
             }
-            else
+
+            Node current = head;
+            while (current.Next != null)
             {
-                Node current = head;
-                while (current.Next != null)
-                {
-                    current = current.Next;
-                }
-                current.Next = newNode;
+                current = current.Next;
             }
+            current.Next = newNode;
+            return ;
         }
 
 
@@ -66,7 +66,7 @@ namespace Cine_Pilas_Colas_
         {
             return head == null;
 
-        }
+         }
 
         public int Size()
         {

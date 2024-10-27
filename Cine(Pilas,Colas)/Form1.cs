@@ -16,11 +16,7 @@ namespace Cine_Pilas_Colas_
         }
         QueueTicket ticketqueue = new QueueTicket();
         QueueTicket ticketqueue_p = new QueueTicket();
-        QueueTicket tickets = new QueueTicket();
         Ticket_Cine ticket = new Ticket_Cine();
-
-
-
 
         //cinema seats
 
@@ -323,8 +319,7 @@ namespace Cine_Pilas_Colas_
         private void ProcessTicket(Node node)
         {
 
-            // Llamar al método Question para determinar si es premium
-            if (ticket.IsPremium == "si")
+            if (node.Ticket.IsPremium == "si")
             {
                 ticketqueue_p.Enqueue(node);
                 MessageBox.Show(node.ToString());
@@ -357,16 +352,20 @@ namespace Cine_Pilas_Colas_
 
         private void BtnTicketNormal_Click(object sender, EventArgs e)
         {
-            if (!ticketqueue_p.IsEmpty() == false)
+            // Primero verifica si hay elementos en la cola de prioridad
+            if (!ticketqueue_p.IsEmpty())
             {
                 TabContrleCinema.SelectedIndex = 1;
-                Lblshift.Text = ticketqueue.Dequeue().ToString();
+                // Desencola de la cola de prioridad y muestra el elemento
+                Lblshift.Text = ticketqueue_p.Dequeue().ToString();
                 return;
             }
 
             TabContrleCinema.SelectedIndex = 1;
-            Lblshift.Text = ticketqueue_p.Dequeue().ToString();
+            // Desencola de la cola normal y muestra el elemento
+            Lblshift.Text = ticketqueue.Dequeue().ToString();
             return;
+
         }
 
         private void BtnVIP_Click(object sender, EventArgs e)
