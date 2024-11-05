@@ -2,21 +2,21 @@ using System.Collections;
 using System.Diagnostics.Eventing.Reader;
 using System.Windows.Forms;
 
-namespace Cine_Pilas_Colas_
+namespace Estructura_de_datos_Pilas_y_Colas
 {
     public partial class Form1 : Form
     {
-        int number_acent = 0;
-        string seat = "";
+
 
         public Form1()
         {
-
             InitializeComponent();
         }
+        int number_acent = 0;
+        string seat = "";
         QueueTicket ticketqueue = new QueueTicket();
         QueueTicket ticketqueue_p = new QueueTicket();
-        Ticket_Cine ticket = new Ticket_Cine();
+
 
         //cinema seats
 

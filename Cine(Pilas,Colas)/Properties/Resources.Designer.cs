@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Cine_Pilas_Colas_.Properties {
+namespace Estructura_de_datos_Pilas_y_Colas.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Cine_Pilas_Colas_.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Cine_Pilas_Colas_.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Estructura_de_datos_Pilas_y_Colas.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

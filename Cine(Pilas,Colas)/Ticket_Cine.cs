@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cine_Pilas_Colas_
+namespace Estructura_de_datos_Pilas_y_Colas
 {
     internal class Ticket_Cine
     {

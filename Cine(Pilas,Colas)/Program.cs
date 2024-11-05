@@ -1,4 +1,4 @@
-namespace Cine_Pilas_Colas_
+namespace Estructura_de_datos_Pilas_y_Colas
 {
     internal static class Program
     {

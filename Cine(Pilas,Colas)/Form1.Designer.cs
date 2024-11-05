@@ -1,4 +1,4 @@
-﻿namespace Cine_Pilas_Colas_
+﻿namespace Estructura_de_datos_Pilas_y_Colas
 {
     partial class Form1
     {
@@ -327,15 +327,6 @@
             pictureBox2.TabIndex = 19;
             pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.cinema_wallpaper_social_media_message_background_vector;
-            pictureBox1.Location = new Point(6, 6);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(834, 524);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 18;
-            pictureBox1.TabStop = false;
             // 
             // TabPageDataOfTicket
             // 

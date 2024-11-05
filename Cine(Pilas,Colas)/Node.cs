@@ -6,12 +6,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace Cine_Pilas_Colas_
+namespace Estructura_de_datos_Pilas_y_Colas
 {
     internal class Node
     {
         public Ticket_Cine Ticket { get; set; }
         public Node Next { get; set; } // Apunta al siguiente nodo
+
+        public Node()
+        {
+            Ticket = null;
+            Next = null;
+        }
 
         public Node(Ticket_Cine ticket)
         {
