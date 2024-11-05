@@ -1,3 +1,4 @@
+using Cine_Pilas_Colas_;
 using System.Collections;
 using System.Diagnostics.Eventing.Reader;
 using System.Windows.Forms;
@@ -397,6 +398,11 @@ namespace Estructura_de_datos_Pilas_y_Colas
             MessageBox.Show("hay " + ticketqueue_p.Size() + " esperando su turno");
         }
 
-
+        private void BtnReturn_Click(object sender, EventArgs e)
+        {
+            Inicio inicio = new Inicio();
+            inicio.Show();
+            this.Hide();
+        }
     }
 }

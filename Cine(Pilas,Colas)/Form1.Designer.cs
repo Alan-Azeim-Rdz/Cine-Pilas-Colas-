@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             TabContrleCinema = new TabControl();
             TabPageTicket = new TabPage();
+            BtnReturn = new Button();
             label2 = new Label();
             BtnVIP = new Button();
             BtnTicket = new Button();
@@ -83,6 +84,7 @@
             // 
             // TabPageTicket
             // 
+            TabPageTicket.Controls.Add(BtnReturn);
             TabPageTicket.Controls.Add(label2);
             TabPageTicket.Controls.Add(BtnVIP);
             TabPageTicket.Controls.Add(BtnTicket);
@@ -111,6 +113,17 @@
             TabPageTicket.TabIndex = 0;
             TabPageTicket.Text = "Acientos Boletos";
             TabPageTicket.UseVisualStyleBackColor = true;
+            // 
+            // BtnReturn
+            // 
+            BtnReturn.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnReturn.Location = new Point(977, 533);
+            BtnReturn.Name = "BtnReturn";
+            BtnReturn.Size = new Size(117, 50);
+            BtnReturn.TabIndex = 39;
+            BtnReturn.Text = "Regresar";
+            BtnReturn.UseVisualStyleBackColor = true;
+            BtnReturn.Click += BtnReturn_Click;
             // 
             // label2
             // 
@@ -327,6 +340,13 @@
             pictureBox2.TabIndex = 19;
             pictureBox2.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.TabIndex = 38;
+            pictureBox1.TabStop = false;
             // 
             // TabPageDataOfTicket
             // 
@@ -497,5 +517,6 @@
         private Button BtnVIP;
         private Button BtnPersonTotal;
         private Button BtnPersonTotalPriority;
+        private Button BtnReturn;
     }
 }
