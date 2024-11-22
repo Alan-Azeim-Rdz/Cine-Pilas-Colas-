@@ -46,14 +46,5 @@ namespace Cine_Pilas_Colas_
             this.Hide();
         }
 
-        private void BtnGoDinamicQueueDouble_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnGoEstaticQueueDouble_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

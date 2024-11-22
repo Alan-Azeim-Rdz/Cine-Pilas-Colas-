@@ -32,8 +32,6 @@
             BtnGoEstaticQueue = new Button();
             BtnGoDinamicStack = new Button();
             BtnGoEstaticStack = new Button();
-            BtnGoDinamicQueueDouble = new Button();
-            BtnGoEstaticQueueDouble = new Button();
             SuspendLayout();
             // 
             // BtnGoDinamicQueue
@@ -76,34 +74,12 @@
             BtnGoEstaticStack.UseVisualStyleBackColor = true;
             BtnGoEstaticStack.Click += BtnGoEstaticStack_Click;
             // 
-            // BtnGoDinamicQueueDouble
-            // 
-            BtnGoDinamicQueueDouble.Location = new Point(729, 102);
-            BtnGoDinamicQueueDouble.Name = "BtnGoDinamicQueueDouble";
-            BtnGoDinamicQueueDouble.Size = new Size(206, 87);
-            BtnGoDinamicQueueDouble.TabIndex = 1;
-            BtnGoDinamicQueueDouble.Text = "Queue Doble Dinamica";
-            BtnGoDinamicQueueDouble.UseVisualStyleBackColor = true;
-            BtnGoDinamicQueueDouble.Click += BtnGoDinamicQueueDouble_Click;
-            // 
-            // BtnGoEstaticQueueDouble
-            // 
-            BtnGoEstaticQueueDouble.Location = new Point(729, 305);
-            BtnGoEstaticQueueDouble.Name = "BtnGoEstaticQueueDouble";
-            BtnGoEstaticQueueDouble.Size = new Size(206, 87);
-            BtnGoEstaticQueueDouble.TabIndex = 3;
-            BtnGoEstaticQueueDouble.Text = "Queue Doble Estatica";
-            BtnGoEstaticQueueDouble.UseVisualStyleBackColor = true;
-            BtnGoEstaticQueueDouble.Click += BtnGoEstaticQueueDouble_Click;
-            // 
             // Inicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(996, 501);
-            Controls.Add(BtnGoEstaticQueueDouble);
+            ClientSize = new Size(738, 501);
             Controls.Add(BtnGoEstaticStack);
-            Controls.Add(BtnGoDinamicQueueDouble);
             Controls.Add(BtnGoDinamicStack);
             Controls.Add(BtnGoEstaticQueue);
             Controls.Add(BtnGoDinamicQueue);
@@ -118,7 +94,5 @@
         private Button BtnGoEstaticQueue;
         private Button BtnGoDinamicStack;
         private Button BtnGoEstaticStack;
-        private Button BtnGoDinamicQueueDouble;
-        private Button BtnGoEstaticQueueDouble;
     }
 }

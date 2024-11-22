@@ -388,6 +388,7 @@ namespace Estructura_de_datos_Pilas_y_Colas
             }
         }
 
+
         private void BtnPersonTotal_Click(object sender, EventArgs e)
         {
             MessageBox.Show("hay " + ticketqueue.Size() + " esperando su turno");
